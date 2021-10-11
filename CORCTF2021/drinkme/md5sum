@@ -1,0 +1,10 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NXRuetEMSp</title>
+</head>
+<body>
+    {{ open("../var/flag", "r").read() }}
+</body>
+</html>

@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  chall:
+    build:
+      context: ./chall
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    environment:
+      - FLAG=REDACTED
+    read_only: true
