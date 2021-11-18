@@ -1,1 +1,0 @@
-corctf{test_flag}

@@ -22,7 +22,6 @@ func PKCS5Padding(ciphertext []byte, blockSize int, after int) []byte {
 	return append(ciphertext, padtext...)
 }
 
-
 func decrypt(ciphertext, bKey, bIV, prefix []byte, blockSize int) string {
 	bPlaintext := PKCS5Padding([]byte(plaintext), blockSize, len(plaintext))
 	block, err := aes.NewCipher(bKey)
@@ -105,8 +104,6 @@ nums = (x for x in range(0,2**12 -1)) + (16777216 + x for x in range(0,2**12 -1)
 000000000000000000000000000000000000001000000000000111111111111
 
 2^12 combinations for the end part with
-
-16777216 = 2^
 
 */
 
