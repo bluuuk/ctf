@@ -1,7 +1,7 @@
 *.tar
 *.tar.gz
 *.zip
-env/
+**/env/
 __pycache__/
 .ipynb_checkpoints
 **/hashclash/
