@@ -9,5 +9,5 @@ Generally, the file `chall.md` contains a write up for a solved challenge. Other
 
 ## Side projects
 
-- CSGC 2020
+- CSGC 2020,2022,2023(Place 20)
 - Google beginners 2021
