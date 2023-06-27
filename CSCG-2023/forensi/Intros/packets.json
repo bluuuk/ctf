@@ -1,0 +1,3500 @@
+[
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:00.791660561 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772720.791660561",
+          "frame.time_delta": "0.000650683",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.614291155",
+          "frame.number": "134",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xbccf",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xc7f9",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "60352",
+          "tcp.dstport": "17235",
+          "tcp.port": "60352",
+          "tcp.port": "17235",
+          "tcp.stream": "2",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "748802716",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "3571969746",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:53:27:4f:94:fa:b1",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:53:27:4f:94:fa:b1",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657650983",
+              "tcp.options.timestamp.tsecr": "1335163569"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.001271942",
+            "tcp.time_delta": "0.000650683"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000621259",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:03.011179189 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772723.011179189",
+          "frame.time_delta": "0.000220848",
+          "frame.time_delta_displayed": "2.219518628",
+          "frame.time_relative": "2.833809783",
+          "frame.number": "518",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xdd94",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xa734",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "60092",
+          "tcp.dstport": "17223",
+          "tcp.port": "60092",
+          "tcp.port": "17223",
+          "tcp.stream": "8",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1073528930",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2560350778",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:5b:d2:4f:95:03:5d",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:5b:d2:4f:95:03:5d",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657653202",
+              "tcp.options.timestamp.tsecr": "1335165789"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000812173",
+            "tcp.time_delta": "0.000220848"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000591325",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:05.225519417 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772725.225519417",
+          "frame.time_delta": "0.000122764",
+          "frame.time_delta_displayed": "2.214340228",
+          "frame.time_relative": "5.048150011",
+          "frame.number": "863",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x2412",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x60b7",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "38816",
+          "tcp.dstport": "31595",
+          "tcp.port": "38816",
+          "tcp.port": "31595",
+          "tcp.stream": "13",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2992907746",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "3159712377",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:64:79:4f:95:0c:03",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:64:79:4f:95:0c:03",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657655417",
+              "tcp.options.timestamp.tsecr": "1335168003"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000784516",
+            "tcp.time_delta": "0.000122764"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000661752",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:07.521775866 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772727.521775866",
+          "frame.time_delta": "0.000296120",
+          "frame.time_delta_displayed": "2.296256449",
+          "frame.time_relative": "7.344406460",
+          "frame.number": "1371",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x9149",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xf37f",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "47626",
+          "tcp.dstport": "28208",
+          "tcp.port": "47626",
+          "tcp.port": "28208",
+          "tcp.stream": "18",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2229327476",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "494940580",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:6d:71:4f:95:14:fb",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:6d:71:4f:95:14:fb",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657657713",
+              "tcp.options.timestamp.tsecr": "1335170299"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000870030",
+            "tcp.time_delta": "0.000296120"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000573910",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:09.792486836 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772729.792486836",
+          "frame.time_delta": "0.000036103",
+          "frame.time_delta_displayed": "2.270710970",
+          "frame.time_relative": "9.615117430",
+          "frame.number": "1845",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xa1e0",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xe2e8",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "54334",
+          "tcp.dstport": "25451",
+          "tcp.port": "54334",
+          "tcp.port": "25451",
+          "tcp.stream": "23",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3720743026",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1922526279",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:76:50:4f:95:1d:da",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:76:50:4f:95:1d:da",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657659984",
+              "tcp.options.timestamp.tsecr": "1335172570"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000719983",
+            "tcp.time_delta": "0.000036103"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000683880",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:12.140105592 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772732.140105592",
+          "frame.time_delta": "0.000187010",
+          "frame.time_delta_displayed": "2.347618756",
+          "frame.time_relative": "11.962736186",
+          "frame.number": "2264",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xd16c",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xb35c",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "41510",
+          "tcp.dstport": "24427",
+          "tcp.port": "41510",
+          "tcp.port": "24427",
+          "tcp.stream": "28",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2698186885",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1265632263",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:7f:7b:4f:95:27:06",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:7f:7b:4f:95:27:06",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657662331",
+              "tcp.options.timestamp.tsecr": "1335174918"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000835642",
+            "tcp.time_delta": "0.000187010"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000648632",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:14.496004831 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772734.496004831",
+          "frame.time_delta": "0.000236880",
+          "frame.time_delta_displayed": "2.355899239",
+          "frame.time_relative": "14.318635425",
+          "frame.number": "2638",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x0ce8",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x77e1",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "57970",
+          "tcp.dstport": "28208",
+          "tcp.port": "57970",
+          "tcp.port": "28208",
+          "tcp.stream": "33",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "450464037",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "3559759551",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:88:af:4f:95:30:3a",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:88:af:4f:95:30:3a",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657664687",
+              "tcp.options.timestamp.tsecr": "1335177274"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000879560",
+            "tcp.time_delta": "0.000236880"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000642680",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:16.716360770 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772736.716360770",
+          "frame.time_delta": "0.000051757",
+          "frame.time_delta_displayed": "2.220355939",
+          "frame.time_relative": "16.538991364",
+          "frame.number": "3040",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xb84b",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xcc7d",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "59056",
+          "tcp.dstport": "25451",
+          "tcp.port": "59056",
+          "tcp.port": "25451",
+          "tcp.stream": "38",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "609929824",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "4250162105",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:91:5b:4f:95:38:e6",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:91:5b:4f:95:38:e6",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657666907",
+              "tcp.options.timestamp.tsecr": "1335179494"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000659035",
+            "tcp.time_delta": "0.000051757"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000607278",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:18.960090079 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772738.960090079",
+          "frame.time_delta": "0.000138033",
+          "frame.time_delta_displayed": "2.243729309",
+          "frame.time_relative": "18.782720673",
+          "frame.number": "3344",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x645c",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x206d",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "41518",
+          "tcp.dstport": "24427",
+          "tcp.port": "41518",
+          "tcp.port": "24427",
+          "tcp.stream": "43",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1480134123",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2698398316",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:9a:1f:4f:95:41:aa",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:9a:1f:4f:95:41:aa",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657669151",
+              "tcp.options.timestamp.tsecr": "1335181738"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000764579",
+            "tcp.time_delta": "0.000138033"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000626546",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:21.145840056 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772741.145840056",
+          "frame.time_delta": "0.000518910",
+          "frame.time_delta_displayed": "2.185749977",
+          "frame.time_relative": "20.968470650",
+          "frame.number": "3726",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x492e",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x3b9b",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "49816",
+          "tcp.dstport": "28208",
+          "tcp.port": "49816",
+          "tcp.port": "28208",
+          "tcp.stream": "48",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2913625864",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1441925846",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:a2:a9:4f:95:4a:33",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:a2:a9:4f:95:4a:33",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657671337",
+              "tcp.options.timestamp.tsecr": "1335183923"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.001133349",
+            "tcp.time_delta": "0.000518910"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000614439",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:23.490645730 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772743.490645730",
+          "frame.time_delta": "0.000132055",
+          "frame.time_delta_displayed": "2.344805674",
+          "frame.time_relative": "23.313276324",
+          "frame.number": "4194",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x8ccd",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xf7fb",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "46516",
+          "tcp.dstport": "25451",
+          "tcp.port": "46516",
+          "tcp.port": "25451",
+          "tcp.stream": "53",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "51397476",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2633004343",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:ab:d2:4f:95:53:5d",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:ab:d2:4f:95:53:5d",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657673682",
+              "tcp.options.timestamp.tsecr": "1335186269"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000730531",
+            "tcp.time_delta": "0.000132055"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000598476",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:25.790044203 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772745.790044203",
+          "frame.time_delta": "0.000171685",
+          "frame.time_delta_displayed": "2.299398473",
+          "frame.time_relative": "25.612674797",
+          "frame.number": "4598",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x4570",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x3f59",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "46804",
+          "tcp.dstport": "12654",
+          "tcp.port": "46804",
+          "tcp.port": "12654",
+          "tcp.stream": "58",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2950967014",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "780228591",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:b4:cd:4f:95:5c:58",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:b4:cd:4f:95:5c:58",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657675981",
+              "tcp.options.timestamp.tsecr": "1335188568"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000803929",
+            "tcp.time_delta": "0.000171685"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000632244",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:28.039283787 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772748.039283787",
+          "frame.time_delta": "0.000109051",
+          "frame.time_delta_displayed": "2.249239584",
+          "frame.time_relative": "27.861914381",
+          "frame.number": "4970",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x9f93",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xe535",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "46660",
+          "tcp.dstport": "26463",
+          "tcp.port": "46660",
+          "tcp.port": "26463",
+          "tcp.stream": "63",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "66675323",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1806729839",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:bd:96:4f:95:65:21",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:bd:96:4f:95:65:21",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657678230",
+              "tcp.options.timestamp.tsecr": "1335190817"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000753783",
+            "tcp.time_delta": "0.000109051"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000644732",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:30.349173851 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772750.349173851",
+          "frame.time_delta": "0.000044646",
+          "frame.time_delta_displayed": "2.309890064",
+          "frame.time_relative": "30.171804445",
+          "frame.number": "5347",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x4df6",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x36d3",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "49446",
+          "tcp.dstport": "12398",
+          "tcp.port": "49446",
+          "tcp.port": "12398",
+          "tcp.stream": "68",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "644792660",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1288143088",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:c6:9c:4f:95:6e:27",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:c6:9c:4f:95:6e:27",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657680540",
+              "tcp.options.timestamp.tsecr": "1335193127"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000656255",
+            "tcp.time_delta": "0.000044646"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000611609",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:32.671097146 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772752.671097146",
+          "frame.time_delta": "0.000059318",
+          "frame.time_delta_displayed": "2.321923295",
+          "frame.time_relative": "32.493727740",
+          "frame.number": "5804",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x2981",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x5b48",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "43572",
+          "tcp.dstport": "24424",
+          "tcp.port": "43572",
+          "tcp.port": "24424",
+          "tcp.stream": "73",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1592279595",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "709931478",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:cf:ae:4f:95:77:39",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:cf:ae:4f:95:77:39",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657682862",
+              "tcp.options.timestamp.tsecr": "1335195449"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000894549",
+            "tcp.time_delta": "0.000059318"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000835231",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:34.973604201 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772754.973604201",
+          "frame.time_delta": "0.000501059",
+          "frame.time_delta_displayed": "2.302507055",
+          "frame.time_relative": "34.796234795",
+          "frame.number": "6099",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x7ece",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x05fb",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "60538",
+          "tcp.dstport": "13108",
+          "tcp.port": "60538",
+          "tcp.port": "13108",
+          "tcp.stream": "78",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2201191745",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2624248817",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:d8:ad:4f:95:80:37",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:d8:ad:4f:95:80:37",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657685165",
+              "tcp.options.timestamp.tsecr": "1335197751"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.001132615",
+            "tcp.time_delta": "0.000501059"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000631556",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:37.229430422 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772757.229430422",
+          "frame.time_delta": "0.000041968",
+          "frame.time_delta_displayed": "2.255826221",
+          "frame.time_relative": "37.052061016",
+          "frame.number": "6503",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xd5ba",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xaf0e",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "36790",
+          "tcp.dstport": "30259",
+          "tcp.port": "36790",
+          "tcp.port": "30259",
+          "tcp.stream": "83",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1465752998",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1606557606",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:e1:7d:4f:95:89:08",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:e1:7d:4f:95:89:08",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657687421",
+              "tcp.options.timestamp.tsecr": "1335200008"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000696990",
+            "tcp.time_delta": "0.000041968"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000655022",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:39.425359192 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772759.425359192",
+          "frame.time_delta": "0.000185291",
+          "frame.time_delta_displayed": "2.195928770",
+          "frame.time_relative": "39.247989786",
+          "frame.number": "6875",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xdd46",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xa782",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "56808",
+          "tcp.dstport": "28213",
+          "tcp.port": "56808",
+          "tcp.port": "28213",
+          "tcp.stream": "88",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2428016961",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1369052451",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:ea:10:4f:95:91:9c",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:ea:10:4f:95:91:9c",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657689616",
+              "tcp.options.timestamp.tsecr": "1335202204"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000820369",
+            "tcp.time_delta": "0.000185291"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000635078",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:41.684485000 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772761.684485000",
+          "frame.time_delta": "0.000058530",
+          "frame.time_delta_displayed": "2.259125808",
+          "frame.time_relative": "41.507115594",
+          "frame.number": "7395",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xdbb1",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xa917",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "58644",
+          "tcp.dstport": "24432",
+          "tcp.port": "58644",
+          "tcp.port": "24432",
+          "tcp.stream": "93",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "353942778",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "1762893096",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:f2:e4:4f:95:9a:69",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:f2:e4:4f:95:9a:69",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657691876",
+              "tcp.options.timestamp.tsecr": "1335204457"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.006781979",
+            "tcp.time_delta": "0.000058530"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.006723449",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:44.055890989 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772764.055890989",
+          "frame.time_delta": "0.000138762",
+          "frame.time_delta_displayed": "2.371405989",
+          "frame.time_relative": "43.878521583",
+          "frame.number": "7885",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x967e",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xee4a",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "58382",
+          "tcp.dstport": "12402",
+          "tcp.port": "58382",
+          "tcp.port": "12402",
+          "tcp.stream": "98",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "2917284532",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "635748464",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:03:fc:27:4f:95:a3:b2",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:03:fc:27:4f:95:a3:b2",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657694247",
+              "tcp.options.timestamp.tsecr": "1335206834"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000740342",
+            "tcp.time_delta": "0.000138762"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000601580",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:46.332886884 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772766.332886884",
+          "frame.time_delta": "0.000120221",
+          "frame.time_delta_displayed": "2.276995895",
+          "frame.time_relative": "46.155517478",
+          "frame.number": "8330",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0x4858",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x3c71",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "40366",
+          "tcp.dstport": "29749",
+          "tcp.port": "40366",
+          "tcp.port": "29749",
+          "tcp.stream": "103",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "3180801227",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2640219447",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:04:05:0c:4f:95:ac:96",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:04:05:0c:4f:95:ac:96",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657696524",
+              "tcp.options.timestamp.tsecr": "1335209110"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.001480019",
+            "tcp.time_delta": "0.000120221"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.001359798",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-02-19",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "eth0"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Feb 19, 2023 02:12:48.562872750 WET",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1676772768.562872750",
+          "frame.time_delta": "0.000242152",
+          "frame.time_delta_displayed": "2.229985866",
+          "frame.time_relative": "48.385503344",
+          "frame.number": "8786",
+          "frame.len": "93",
+          "frame.cap_len": "93",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:data",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "dc:a6:32:1d:ae:14",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Raspberr_1d:ae:14",
+            "eth.dst.oui": "14460466",
+            "eth.dst.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.addr": "dc:a6:32:1d:ae:14",
+            "eth.addr_resolved": "Raspberr_1d:ae:14",
+            "eth.addr.oui": "14460466",
+            "eth.addr.oui_resolved": "Raspberry Pi Trading Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "08:00:27:a8:e4:76",
+          "eth.src_tree": {
+            "eth.src_resolved": "PcsCompu_a8:e4:76",
+            "eth.src.oui": "524327",
+            "eth.src.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.addr": "08:00:27:a8:e4:76",
+            "eth.addr_resolved": "PcsCompu_a8:e4:76",
+            "eth.addr.oui": "524327",
+            "eth.addr.oui_resolved": "PCS Computer Systems GmbH",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x0800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "79",
+          "ip.id": "0xa4a7",
+          "ip.flags": "0x02",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0xe021",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.26.53",
+          "ip.addr": "192.168.26.53",
+          "ip.src_host": "192.168.26.53",
+          "ip.host": "192.168.26.53",
+          "ip.dst": "192.168.26.90",
+          "ip.addr": "192.168.26.90",
+          "ip.dst_host": "192.168.26.90",
+          "ip.host": "192.168.26.90"
+        },
+        "tcp": {
+          "tcp.srcport": "57978",
+          "tcp.dstport": "8573",
+          "tcp.port": "57978",
+          "tcp.port": "8573",
+          "tcp.stream": "108",
+          "tcp.completeness": "31",
+          "tcp.len": "27",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "1260168391",
+          "tcp.nxtseq": "28",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "2525038657",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x0018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ae": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ece": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······AP···"
+          },
+          "tcp.window_size_value": "502",
+          "tcp.window_size": "64256",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0xb621",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:04:0d:c2:4f:95:b5:4d",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:da:04:0d:c2:4f:95:b5:4d",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3657698754",
+              "tcp.options.timestamp.tsecr": "1335211341"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000989254",
+            "tcp.time_delta": "0.000242152"
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000747102",
+            "tcp.analysis.bytes_in_flight": "27",
+            "tcp.analysis.push_bytes_sent": "27"
+          },
+          "tcp.payload": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a"
+        },
+        "data": {
+          "data.data": "f0:9f:9a:aa:7c:3c:7c:5c:7c:30:3c:7c:3c:7c:3c:7c:5c:7c:30:3c:7c:3c:f0:9f:9a:aa:0a",
+          "data.len": "27"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,8 @@
+set_io  LED1       26
+
+# DEBOUNCE_PERIOD 60000
+set_io  BTN1       20
+set_io  BTN2       19
+
+# 12 MHz clock
+set_io  CLK        35
