@@ -1,0 +1,166 @@
+Attaching...
+Installing hooks...
+Hooks installed, intercepting messages...
+
+------------------------------------------------------------
+xpc_connection_send_message_with_reply_sync
+<OS_xpc_connection: <connection: 0x2854b1dc0> { name = com.apple.coremedia.videocompositor, listener = false, pid = 34, euid = 501, egid = 501, asid = 0 }>
+<OS_xpc_dictionary> { count = 7 contents = 
+	"FrameID" => <OS_xpc_int64: <int64: 0x979c2fa13c950c97>: 145>
+	".objectID" => <OS_xpc_uint64: <uint64: 0x282df6da0>: 9592139440719361>
+	"CompositionStatus" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	".AbortActionID" => <OS_xpc_int64: <int64: 0x979c2fa13c9502af>: 342>
+	".Operation" => <OS_xpc_uint64: <uint64: 0x971c2fa2473eab9f>: 1869968496>
+	"ProcessingTime" => <OS_xpc_int64: <int64: 0x979c2fa13e3300cf>: 5554458>
+	"ComposedBuffer" => <OS_xpc_mach_send: <mach send right: 0x282df7760> { name = 48267, right = send, urefs = 1 }>
+	
+}
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+_xpc_connection_call_event_handler
+<OS_xpc_connection: <connection: 0x2854b1dc0> { name = com.apple.coremedia.videocompositor, listener = false, pid = 34, euid = 501, egid = 501, asid = 0 }>
+<OS_xpc_dictionary> { count = 7 contents = 
+	"FrameID" => <OS_xpc_int64: <int64: 0x979c2fa13c950c8f>: 146>
+	".objectID" => <OS_xpc_uint64: <uint64: 0x282df2040>: 9592139440719361>
+	"CompositionStatus" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	".AbortActionID" => <OS_xpc_int64: <int64: 0x979c2fa13c9502a7>: 343>
+	".Operation" => <OS_xpc_uint64: <uint64: 0x971c2fa2473eab9f>: 1869968496>
+	"ProcessingTime" => <OS_xpc_int64: <int64: 0x979c2fa135754a7f>: 20711500>
+	"ComposedBuffer" => <OS_xpc_mach_send: <mach send right: 0x282df17a0> { name = 48271, right = send, urefs = 1 }>
+	
+}
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+xpc_connection_send_message_with_reply_sync
+<OS_xpc_connection: <connection: 0x2854b1dc0> { name = com.apple.coremedia.videocompositor, listener = false, pid = 34, euid = 501, egid = 501, asid = 0 }>
+<OS_xpc_dictionary> { count = 9 contents = 
+	"SourceTrackIDArray" => <data> { length = 4 bytes, contents = 
+		02000000
+		}
+	"SourceSampleBufferArray" => <OS_xpc_array: <array: 0x297ee0720> { count = 0, capacity = 0, contents =
+}>
+	".objectID" => <OS_xpc_uint64: <uint64: 0x282df7780>: 9592139440719361>
+	"FrameID" => <OS_xpc_int64: <int64: 0x979c2fa13c950c87>: 147>
+	"SourceSampleBufferTrackIDArray" => <data> { length = 0 bytes, contents = 
+		
+		}
+	".Operation" => <OS_xpc_uint64: <uint64: 0x971c2fa2afe62b8f>: 1919837298>
+	"CompositionInstructionDict" => <OS_xpc_dictionary> { count = 6 contents = 
+	"InstructionIdentifier" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"RequiredVideoTrackIDArray" => <OS_xpc_array: <array: 0x297ee0f60> { count = 1, capacity = 1, contents =
+	0: <int64: 0x979c2fa13c95080f>: 2
+}>
+	"EndTime" => <OS_xpc_dictionary> { count = 4 contents = 
+	"epoch" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	"timescale" => <OS_xpc_int64: <int64: 0x979c2fa13c97e61f>: 24000>
+	"flags" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"value" => <OS_xpc_int64: <int64: 0x979c2fa13cbe9777>: 357357>
+	
+}"StartTime" => <OS_xpc_dictionary> { count = 4 contents = 
+	"epoch" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	"timescale" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"flags" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"value" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	
+}"EnablePostProcessing" => <OS_xpc_bool: <bool: 0x21e335670>: false>
+	"ContainsTweening" => <OS_xpc_bool: <bool: 0x21e335650>: true>
+	
+}"CompositionTime" => <data> { length = 24 bytes, contents = 
+		e23a020000000000c05d0000010000000000000000000000
+		}
+	"SourceFrameArray" => <OS_xpc_array: <array: 0x297ee1590> { count = 1, capacity = 1, contents =
+	0: <mach send right: 0x282df6cc0> { name = 60239, right = send, urefs = 1 }
+}>
+	
+}
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+_xpc_connection_call_event_handler
+<OS_xpc_connection: <connection: 0x2854b1dc0> { name = com.apple.coremedia.videocompositor, listener = false, pid = 34, euid = 501, egid = 501, asid = 0 }>
+<OS_xpc_dictionary> { count = 6 contents = 
+	"FoldedStartCompositionTime" => <data> { length = 24 bytes, contents = 
+		cb3e020000000000c05d0000010000000000000000000000
+		}
+	"FoldedEndCompositionTime" => <data> { length = 24 bytes, contents = 
+		ed73050000000000c05d0000010000000000000000000000
+		}
+	".objectID" => <OS_xpc_uint64: <uint64: 0x282dfd4a0>: 9592139440719361>
+	".Operation" => <OS_xpc_uint64: <uint64: 0x971c2fa237062b8f>: 1634886770>
+	"FoldedSubsequentEndCompositionTime" => <data> { length = 24 bytes, contents = 
+		000000000000000000000000000000000000000000000000
+		}
+	"FoldedSubsequentStartCompositionTime" => <data> { length = 24 bytes, contents = 
+		000000000000000000000000000000000000000000000000
+		}
+	
+}
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+_xpc_connection_call_event_handler
+<OS_xpc_connection: <connection: 0x2854b1dc0> { name = com.apple.coremedia.videocompositor, listener = false, pid = 34, euid = 501, egid = 501, asid = 0 }>
+<OS_xpc_dictionary> { count = 9 contents = 
+	"SourceTrackIDArray" => <data> { length = 4 bytes, contents = 
+		02000000
+		}
+	"SourceSampleBufferArray" => <OS_xpc_array: <array: 0x2921c7840> { count = 0, capacity = 0, contents =
+}>
+	".objectID" => <OS_xpc_uint64: <uint64: 0x282dfe3c0>: 9592139440719361>
+	"FrameID" => <OS_xpc_int64: <int64: 0x979c2fa13c950cbf>: 148>
+	"SourceSampleBufferTrackIDArray" => <data> { length = 0 bytes, contents = 
+		
+		}
+	".Operation" => <OS_xpc_uint64: <uint64: 0x971c2fa2afe62b8f>: 1919837298>
+	"CompositionInstructionDict" => <OS_xpc_dictionary> { count = 6 contents = 
+	"InstructionIdentifier" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"RequiredVideoTrackIDArray" => <OS_xpc_array: <array: 0x2921c77e0> { count = 1, capacity = 1, contents =
+	0: <int64: 0x979c2fa13c95080f>: 2
+}>
+	"EndTime" => <OS_xpc_dictionary> { count = 4 contents = 
+	"epoch" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	"timescale" => <OS_xpc_int64: <int64: 0x979c2fa13c97e61f>: 24000>
+	"flags" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"value" => <OS_xpc_int64: <int64: 0x979c2fa13cbe9777>: 357357>
+	
+}"StartTime" => <OS_xpc_dictionary> { count = 4 contents = 
+	"epoch" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	"timescale" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"flags" => <OS_xpc_int64: <int64: 0x979c2fa13c950817>: 1>
+	"value" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	
+}"EnablePostProcessing" => <OS_xpc_bool: <bool: 0x21e335670>: false>
+	"ContainsTweening" => <OS_xpc_bool: <bool: 0x21e335650>: true>
+	
+}"CompositionTime" => <data> { length = 24 bytes, contents = 
+		cb3e020000000000c05d0000010000000000000000000000
+		}
+	"SourceFrameArray" => <OS_xpc_array: <array: 0x2921c5bf0> { count = 1, capacity = 1, contents =
+	0: <mach send right: 0x282dfdba0> { name = 60243, right = send, urefs = 1 }
+}>
+	
+}
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+xpc_connection_send_message_with_reply_sync
+<OS_xpc_connection: <connection: 0x2854b1dc0> { name = com.apple.coremedia.videocompositor, listener = false, pid = 34, euid = 501, egid = 501, asid = 0 }>
+<OS_xpc_dictionary> { count = 7 contents = 
+	"FrameID" => <OS_xpc_int64: <int64: 0x979c2fa13c950c87>: 147>
+	".objectID" => <OS_xpc_uint64: <uint64: 0x282dfd7a0>: 9592139440719361>
+	"CompositionStatus" => <OS_xpc_int64: <int64: 0x979c2fa13c95081f>: 0>
+	".AbortActionID" => <OS_xpc_int64: <int64: 0x979c2fa13c9502df>: 344>
+	".Operation" => <OS_xpc_uint64: <uint64: 0x971c2fa2473eab9f>: 1869968496>
+	"ProcessingTime" => <OS_xpc_int64: <int64: 0x979c2fa13e678c5f>: 6181000>
+	"ComposedBuffer" => <OS_xpc_mach_send: <mach send right: 0x282dfd4a0> { name = 48275, right = send, urefs = 1 }>
+	
+}
+------------------------------------------------------------
+

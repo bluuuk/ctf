@@ -1,0 +1,164 @@
+{
+  "projectVersion": 1,
+  "files": [
+    "CTF_AndroidInternals_FunctionCalling.apk"
+  ],
+  "treeExpansions": [
+    [
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "org",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "com",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "androidx",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "android.support.v4",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "google",
+      "com",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "kotlinx.coroutines",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "kotlin",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "_COROUTINE",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "example.ctfandroidinternals",
+      "com",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "com.example.ctfandroidinternals.ThirdActivity",
+      "example.ctfandroidinternals",
+      "com",
+      "Source code",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "Resources",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "lib",
+      "Resources",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "arm64-v8a",
+      "lib",
+      "Resources",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "armeabi-v7a",
+      "lib",
+      "Resources",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "x86_64",
+      "lib",
+      "Resources",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ],
+    [
+      "x86",
+      "lib",
+      "Resources",
+      "CTF_AndroidInternals_FunctionCalling.apk"
+    ]
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "class",
+      "tabPath": "com.example.ctfandroidinternals.R",
+      "subPath": "java",
+      "caret": 596693,
+      "view": {
+        "x": 0,
+        "y": 312784
+      },
+      "active": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.example.ctfandroidinternals.MainActivity",
+      "subPath": "java",
+      "caret": 1053,
+      "view": {
+        "x": 0,
+        "y": 364
+      },
+      "active": true
+    },
+    {
+      "type": "resource",
+      "tabPath": "lib/arm64-v8a/libnative-lib.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false
+    },
+    {
+      "type": "resource",
+      "tabPath": "lib/armeabi-v7a/libnative-lib.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false
+    },
+    {
+      "type": "resource",
+      "tabPath": "lib/x86/libnative-lib.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false
+    }
+  ],
+  "cacheDir": "/Users/bluk/Library/Caches/io.github.skylot.jadx/projects/CTF_AndroidInternals_FunctionCalling-ee5976436d97daa2ec0ea7dd6a028f1b",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "pluginOptions": {}
+}
