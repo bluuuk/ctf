@@ -1,0 +1,111 @@
+diff --git a/src/d8/d8.cc b/src/d8/d8.cc
+index 50ae364ff9c..eed119f640e 100644
+--- a/src/d8/d8.cc
++++ b/src/d8/d8.cc
+@@ -3807,59 +3807,61 @@ Local<FunctionTemplate> Shell::CreateNodeTemplates(
+   return div_element;
+ }
+ 
+-Local<ObjectTemplate> Shell::CreateGlobalTemplate(Isolate* isolate) {
+-  Local<ObjectTemplate> global_template = ObjectTemplate::New(isolate);
+-  global_template->Set(Symbol::GetToStringTag(isolate),
+-                       String::NewFromUtf8Literal(isolate, "global"));
+-  global_template->Set(isolate, "version",
+-                       FunctionTemplate::New(isolate, Version));
+-
+-  global_template->Set(isolate, "print", FunctionTemplate::New(isolate, Print));
+-  global_template->Set(isolate, "printErr",
+-                       FunctionTemplate::New(isolate, PrintErr));
+-  global_template->Set(isolate, "write",
+-                       FunctionTemplate::New(isolate, WriteStdout));
+-  if (!i::v8_flags.fuzzing) {
+-    global_template->Set(isolate, "writeFile",
+-                         FunctionTemplate::New(isolate, WriteFile));
+-  }
+-  global_template->Set(isolate, "read",
+-                       FunctionTemplate::New(isolate, ReadFile));
+-  global_template->Set(isolate, "readbuffer",
+-                       FunctionTemplate::New(isolate, ReadBuffer));
+-  global_template->Set(isolate, "readline",
+-                       FunctionTemplate::New(isolate, ReadLine));
+-  global_template->Set(isolate, "load",
+-                       FunctionTemplate::New(isolate, ExecuteFile));
+-  global_template->Set(isolate, "setTimeout",
+-                       FunctionTemplate::New(isolate, SetTimeout));
+-  // Some Emscripten-generated code tries to call 'quit', which in turn would
+-  // call C's exit(). This would lead to memory leaks, because there is no way
+-  // we can terminate cleanly then, so we need a way to hide 'quit'.
+-  if (!options.omit_quit) {
+-    global_template->Set(isolate, "quit", FunctionTemplate::New(isolate, Quit));
+-  }
+-  global_template->Set(isolate, "testRunner",
+-                       Shell::CreateTestRunnerTemplate(isolate));
+-  global_template->Set(isolate, "Realm", Shell::CreateRealmTemplate(isolate));
+-  global_template->Set(isolate, "performance",
+-                       Shell::CreatePerformanceTemplate(isolate));
+-  global_template->Set(isolate, "Worker", Shell::CreateWorkerTemplate(isolate));
++Local<ObjectTemplate> CreateRestrictedTemplate(Isolate* isolate) {
++  Local<ObjectTemplate> restricted_template = ObjectTemplate::New(isolate);
++  restricted_template->Set(isolate, "version",
++                           FunctionTemplate::New(isolate, Shell::Version));
++  restricted_template->Set(isolate, "print",
++                           FunctionTemplate::New(isolate, Shell::Print));
++  restricted_template->Set(isolate, "printErr",
++                           FunctionTemplate::New(isolate, Shell::PrintErr));
++  restricted_template->Set(isolate, "write",
++                           FunctionTemplate::New(isolate, Shell::WriteStdout));
++  restricted_template->Set(isolate, "read",
++                           FunctionTemplate::New(isolate, Shell::ReadFile));
++  restricted_template->Set(isolate, "readbuffer",
++                           FunctionTemplate::New(isolate, Shell::ReadBuffer));
++  restricted_template->Set(isolate, "readline",
++                           FunctionTemplate::New(isolate, Shell::ReadLine));
++  restricted_template->Set(isolate, "load",
++                           FunctionTemplate::New(isolate, Shell::ExecuteFile));
++  restricted_template->Set(isolate, "setTimeout",
++                           FunctionTemplate::New(isolate, Shell::SetTimeout));
++
++  return restricted_template;
++}
++
++uint32_t secret_number = static_cast<uint32_t>(rand()) << 16 | static_cast<uint32_t>(rand()); 
++
++void UnlockShell(const FunctionCallbackInfo<Value>& args) {
++  Isolate* isolate = args.GetIsolate();
++  HandleScope scope(isolate);
+ 
+-  // Prevent fuzzers from creating side effects.
+-  if (!i::v8_flags.fuzzing) {
+-    global_template->Set(isolate, "os", Shell::CreateOSTemplate(isolate));
++  if (args.Length() < 1 || !args[0]->IsNumber()) {
++    args.GetReturnValue().Set(Undefined(isolate));
++    return;
+   }
+-  global_template->Set(isolate, "d8", Shell::CreateD8Template(isolate));
+ 
+-  if (i::v8_flags.expose_async_hooks) {
+-    global_template->Set(isolate, "async_hooks",
+-                         Shell::CreateAsyncHookTemplate(isolate));
++  uint32_t guess = args[0]->Uint32Value(isolate->GetCurrentContext()).ToChecked();
++  if (guess == secret_number) {
++    Local<ObjectTemplate> restricted_template = CreateRestrictedTemplate(isolate);
++    Local<Object> restricted_obj = restricted_template->NewInstance(isolate->GetCurrentContext()).ToLocalChecked();
++    args.GetReturnValue().Set(restricted_obj);
++  } else {
++    args.GetReturnValue().Set(String::NewFromUtf8Literal(isolate, "Wrong guess! Try again."));
+   }
++}
++
++Local<ObjectTemplate> Shell::CreateGlobalTemplate(Isolate* isolate) {
++  Local<ObjectTemplate> global_template = ObjectTemplate::New(isolate);
++
++  global_template->Set(isolate, "unlockShell",
++                       FunctionTemplate::New(isolate, UnlockShell));
+ 
+   return global_template;
+ }
+ 
++
+ Local<ObjectTemplate> Shell::CreateOSTemplate(Isolate* isolate) {
+   Local<ObjectTemplate> os_template = ObjectTemplate::New(isolate);
+   AddOSMethods(isolate, os_template);

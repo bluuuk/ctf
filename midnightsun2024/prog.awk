@@ -1,0 +1,1 @@
+/^phy#/ { phy = $0 } $1 == "Interface" { interface = $2 } interface == iface { print phy }

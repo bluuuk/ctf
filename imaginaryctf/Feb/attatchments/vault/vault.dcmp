@@ -1,0 +1,389 @@
+export memory memory(initial: 256, max: 256);
+
+global g_a:int = 5243920;
+global g_b:int = 0;
+global g_c:int = 0;
+
+export table indirect_function_table:funcref(min: 1, max: 1);
+
+export function wasm_call_ctors() {
+  emscripten_stack_init()
+}
+
+function f_b(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  d[3] = a;
+  var e:int = d[3];
+  var f:int = d[3];
+  var g:int = e * f;
+  var h:int = d[3];
+  var i:int = g + h;
+  var j:int = 2;
+  var k:int = i % j;
+  var l:int = 0;
+  var m:int = k;
+  var n:int = l;
+  var o:int = m == n;
+  var p:int = 1;
+  var q:int = o & p;
+  return q;
+}
+
+function f_c(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  d[3] = a;
+  var e:int = d[3];
+  var f:int = d[3];
+  var g:int = e * f;
+  var h:int = d[3];
+  var i:int = g - h;
+  var j:int = 2;
+  var k:int = i % j;
+  var l:int = 1;
+  var m:int = k;
+  var n:int = l;
+  var o:int = m == n;
+  var p:int = 1;
+  var q:int = o & p;
+  return q;
+}
+
+function f_d(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  d[3] = a;
+  var e:int = d[3];
+  var f:int = 305419896;
+  var g:int = e ^ f;
+  var h:int = d[3];
+  var i:int = 16;
+  var j:int = h >> i;
+  var k:int = g + j;
+  var l:int = d[3];
+  var m:int = 65535;
+  var n:int = l & m;
+  var o:int = k - n;
+  return o;
+}
+
+function f_e(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  d[3] = a;
+  var e:int = d[3];
+  var f:int = -559038737;
+  var g:int = e * f;
+  var h:int = d[3];
+  var i:int = -889275714;
+  var j:int = h + i;
+  var k:int = g ^ j;
+  return k;
+}
+
+function f_f(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  g_a = d;
+  d[3] = a;
+  var e:int = d[3];
+  var f:int = f_c(e);
+  var g:int = 1;
+  var h:int = f & g;
+  if (eqz(h)) goto B_a
+  label B_a:
+  var i:int = d[3];
+  var j:int = 16;
+  var k:int = i >> j;
+  var l:int = 65535;
+  var m:int = k & l;
+  var n:int = 16;
+  var o:int = d + n;
+  g_a = o;
+  return m;
+}
+
+function f_g(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  g_a = d;
+  d[2] = a;
+  var e:int = d[2];
+  var f:int = f_b(e);
+  var g:int = 1;
+  var h:int = f & g;
+  if (eqz(h)) goto B_b;
+  var i:int = d[2];
+  var j:int = 65535;
+  var k:int = i & j;
+  d[3] = k;
+  goto B_a;
+  label B_b:
+  var l:int = d[2];
+  var m:int = f_e(l);
+  d[3] = m;
+  label B_a:
+  var n:int = d[3];
+  var o:int = 16;
+  var p:int = d + o;
+  g_a = p;
+  return n;
+}
+
+function f_h(a:int):int {
+  var b:int = g_a;
+  var c:int = 16;
+  var d:int_ptr = b - c;
+  d[3] = a;
+  var e:int = d[3];
+  var f:int = -559038737;
+  var g:int = e * f;
+  var h:int = d[3];
+  var i:int = -889275714;
+  var j:int = h + i;
+  var k:int = g ^ j;
+  return k;
+}
+
+function f_i(a:int, b:int, c:int):int {
+  var d:int = g_a;
+  var e:int = 32;
+  var f:int_ptr = d - e;
+  g_a = f;
+  f[6] = a;
+  f[5] = b;
+  f[4] = c;
+  var g:int = f[6];
+  var h:int = f[5];
+  var i:int = g + h;
+  var j:int = f_b(i);
+  var k:int = 1;
+  var l:int = j & k;
+  if (eqz(l)) goto B_b;
+  var m:int = f[6];
+  var n:int = f[5];
+  var o:int = m * n;
+  var p:int = -559038737;
+  var q:int = o ^ p;
+  f[3] = q;
+  var r:int = f[4];
+  var s:int = 3;
+  var t:int = r << s;
+  var u:int = f[3];
+  var v:int = u + t;
+  f[3] = v;
+  var w:int = f[3];
+  var x:int = -889275714;
+  var y:int = w ^ x;
+  f[3] = y;
+  var z:int = f[3];
+  f[7] = z;
+  goto B_a;
+  label B_b:
+  var aa:int = 0;
+  f[7] = aa;
+  label B_a:
+  var ba:int = f[7];
+  var ca:int = 32;
+  var da:int = f + ca;
+  g_a = da;
+  return ba;
+}
+
+function f_j(a:int, b:int):int {
+  var c:int = g_a;
+  var d:int = 32;
+  var e:int = c - d;
+  g_a = e;
+  e[6]:int = a;
+  e[5]:int = b;
+  var f:int = e[5]:int;
+  var g:int = f_h(f);
+  e[4]:int = g;
+  var h:int = e[6]:int;
+  var i:int = 7777777;
+  var j:int = h % i;
+  var k:int = 42;
+  var l:int = j - k;
+  e[3]:int = l;
+  var m:int = e[4]:int;
+  var n:int = 16711935;
+  var o:int = m & n;
+  var p:int = 15925324;
+  var q:int = o ^ p;
+  e[2]:int = q;
+  var r:int = e[4]:int;
+  var s:int = 305419896;
+  var t:int = r ^ s;
+  var u:int = t;
+  var ua:long = i64_extend_i32_s(u);
+  var va:long = 194484560699266100L;
+  var wa:long = ua ^ va;
+  var v:int = i32_wrap_i64(wa);
+  e[1]:int = v;
+  var w:int = e[3]:int;
+  var x:int = e[2]:int;
+  var y:int = w | x;
+  var z:int = e[1]:int;
+  var aa:int = y | z;
+  e[0]:int = aa;
+  var ba:int = e[5]:int;
+  var ca:int = f_c(ba);
+  var da:int = 1;
+  var ea:int = ca & da;
+  if (eqz(ea)) goto B_b;
+  var fa:int = 0;
+  var ga:int = 1;
+  var ha:int = fa & ga;
+  e[31]:byte = ha;
+  goto B_a;
+  label B_b:
+  var ia:int = e[0]:int;
+  var ja:int = 0;
+  var ka:int = ia;
+  var la:int = ja;
+  var ma:int = ka == la;
+  var na:int = 1;
+  var oa:int = ma & na;
+  e[31]:byte = oa;
+  label B_a:
+  var pa:int = e[31]:ubyte;
+  var qa:int = 1;
+  var ra:int = pa & qa;
+  var sa:int = 32;
+  var ta:int = e + sa;
+  g_a = ta;
+  return ra;
+}
+
+export function check_pin(a:int):int {
+  var b:int = g_a;
+  var c:int = 32;
+  var d:int = b - c;
+  g_a = d;
+  d[6]:int = a;
+  var e:int = d[6]:int;
+  var f:int = f_c(e);
+  var g:int = 1;
+  var h:int = f & g;
+  if (eqz(h)) goto B_b;
+  var i:int = 0;
+  var j:int = 1;
+  var k:int = i & j;
+  d[31]:byte = k;
+  goto B_a;
+  label B_b:
+  var l:int = d[6]:int;
+  f_d(l);
+  var m:int = d[6]:int;
+  f_e(m);
+  var n:int = d[6]:int;
+  var o:int = f_f(n);
+  d[5]:int = o;
+  var p:int = d[6]:int;
+  var q:int = f_g(p);
+  d[4]:int = q;
+  var r:int = d[5]:int;
+  var s:int = d[4]:int;
+  var t:int = d[6]:int;
+  var u:int = f_i(r, s, t);
+  d[3]:int = u;
+  var v:int = d[3]:int;
+  var w:int = d[6]:int;
+  var x:int = f_j(v, w);
+  var y:int = 1;
+  var z:int = x & y;
+  d[31]:byte = z;
+  label B_a:
+  var aa:int = d[31]:ubyte;
+  var ba:int = 1;
+  var ca:int = aa & ba;
+  var da:int = 32;
+  var ea:int = d + da;
+  g_a = ea;
+  return ca;
+}
+
+export function stackSave():int {
+  return g_a
+}
+
+export function stackRestore(a:int) {
+  g_a = a
+}
+
+export function stackAlloc(a:int):int {
+  var b:int = g_a - a & -16;
+  g_a = b;
+  return b;
+}
+
+export function emscripten_stack_init() {
+  g_c = 5243920;
+  g_b = 1040 + 15 & -16;
+}
+
+export function emscripten_stack_get_free():int {
+  return g_a - g_b
+}
+
+export function emscripten_stack_get_base():int {
+  return g_c
+}
+
+export function emscripten_stack_get_end():int {
+  return g_b
+}
+
+function f_s(a:int) {
+}
+
+function f():int {
+  f_s(1024);
+  return 1028;
+}
+
+function f_u(a:int):int {
+  return 1
+}
+
+export function stdio_exit() {
+  var a:int_ptr = f()[0]:int;
+  if (eqz(a)) goto B_a;
+  loop L_b {
+    f_w(a);
+    a = a[14];
+    if (a) continue L_b;
+  }
+  label B_a:
+  f_w(0[258]:int);
+  f_w(0[258]:int);
+  f_w(0[258]:int);
+}
+
+function f_w(a:int_ptr) {
+  var c:int;
+  if (eqz(a)) goto B_a;
+  if (a[19] < 0) goto B_b;
+  f_u(a);
+  label B_b:
+  if (a[5] == a[7]) goto B_c;
+  call_indirect(a, 0, 0, a[9]);
+  label B_c:
+  var b:int = a[1];
+  if (b == (c = a[2])) goto B_a;
+  call_indirect(a, i64_extend_i32_s(b - c), 1, a[10]);
+  label B_a:
+}
+
+export function errno_location():int {
+  return 1036
+}
+
