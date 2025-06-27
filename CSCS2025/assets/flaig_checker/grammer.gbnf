@@ -1,0 +1,2 @@
+root ::= "CSCG{" rest 
+rest ::= .*

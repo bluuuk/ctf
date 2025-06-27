@@ -1,0 +1,96 @@
+# give permissions to the challenge entrypoint
+# this are the permissions with which the user starts the challenge
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: entrypoint
+  namespace: flag
+rules:
+- apiGroups:
+    - "*"
+  resources: ["pods", "configmaps"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: entrypoint
+  namespace: flag
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: entrypoint
+subjects:
+- kind: ServiceAccount
+  name: entrypoint
+  namespace: entrypoint
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: entrypoint
+  namespace: ctf
+rules:
+- apiGroups:
+    - "*"
+  resources: ["*"]
+  verbs: ["get", "list", "watch"]
+- apiGroups:
+    - "*"
+  resources: ["pods", "services", "configmaps", "secrets", "deployments", "pods/exec", "pods/log"]
+  verbs: ["get", "list", "watch", "create", "update", "delete"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ctf
+  namespace: ctf
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: entrypoint
+subjects:
+- kind: ServiceAccount
+  name: entrypoint
+  namespace: entrypoint
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: entrypoint
+rules:
+- apiGroups:
+    - "*"
+  resources: ["namespace", "roles", "clusterroles", "rolebindings", "clusterrolebindings"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: entrypoint
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: entrypoint
+subjects:
+- kind: ServiceAccount
+  name: entrypoint
+  namespace: entrypoint
+
+# add this binding to make the entrypoint cluster admin
+#---
+#apiVersion: rbac.authorization.k8s.io/v1
+#kind: ClusterRoleBinding
+#metadata:
+#  name: debug
+#subjects:
+#- kind: ServiceAccount
+#  name: entrypoint
+#  namespace: entrypoint
+#roleRef:
+#  kind: ClusterRole
+#  name: cluster-admin
+#  apiGroup: rbac.authorization.k8s.io

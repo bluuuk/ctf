@@ -1,0 +1,86 @@
+# actual challenge setup
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: supercluster-cron
+  namespace: flag
+data:
+  root: "* * * * * wget -O /tmp/superclusters.tar.gz https://static.cscg.live/ccceaebec38a3e60436789e9108a3a0e9a34532fd8ef2a98b0acf0b686d9a666/superclusters.tar.gz && tar -x --overwrite -C /www -f /tmp/superclusters.tar.gz; rm /tmp/superclusters.tar.gz"
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: supercluster
+  namespace: flag
+spec:
+  selector:
+    matchLabels:
+      app: supercluster
+  template:
+    metadata:
+      labels:
+        app: supercluster
+    spec:
+      automountServiceAccountToken: false
+      shareProcessNamespace: true
+      initContainers:
+      - name: init-www
+        image: busybox:1.37.0-uclibc
+        imagePullPolicy: Never
+        command: ["sh", "-c"]
+        args: ["cp /html/* /www"]
+        volumeMounts:
+        - name: html
+          mountPath: "/html"
+          readOnly: true
+        - name: www
+          mountPath: "/www"
+      - name: supercluster-cron
+        image: busybox:1.37.0-uclibc
+        imagePullPolicy: Never
+        restartPolicy: Always
+        command: ["crond", "-f"]
+        volumeMounts:
+        - name: www
+          mountPath: "/www"
+        - name: cron-config
+          mountPath: "/var/spool/cron/crontabs"
+          readOnly: true
+        - name: flag
+          mountPath: "/flag"
+          readOnly: true
+      containers:
+      - name: supercluster-webserver
+        image: busybox:1.37.0-uclibc
+        imagePullPolicy: Never
+        command: ["httpd", "-f", "-v", "-h", "/www", "-p", "8080"]
+        volumeMounts:
+        - name: www
+          mountPath: "/www"
+          readOnly: true
+      volumes:
+      - name: flag
+        secret:
+          secretName: flag
+      - name: www
+        emptyDir: {}
+      - name: html
+        configMap:
+          name: supercluster-html
+      - name: cron-config
+        configMap:
+          name: supercluster-cron
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supercluster
+  namespace: flag
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: supercluster

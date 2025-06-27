@@ -1,0 +1,37 @@
+FROM ubuntu:noble-20241118.1@sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+ENV DEBIAN_FRONTEND=noninteractive
+RUN \
+    --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt,sharing=locked \
+    : "${SOURCE_DATE_EPOCH:=$(stat --format=%Y /etc/apt/sources.list.d/ubuntu.sources)}" && \
+    snapshot="$(/bin/bash -euc "printf \"%(%Y%m%dT%H%M%SZ)T\n\" \"${SOURCE_DATE_EPOCH}\"")" && \
+    : "Enabling snapshot" && \
+    sed -i -e '/Types: deb/ a\Snapshot: true' /etc/apt/sources.list.d/ubuntu.sources && \
+    : "Enabling cache" && \
+    rm -f /etc/apt/apt.conf.d/docker-clean && \
+    echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' >/etc/apt/apt.conf.d/keep-cache && \
+    : "Fetching the snapshot and installing ca-certificates in one command" && \
+    apt-get install --update --snapshot "${snapshot}" -o Acquire::Check-Valid-Until=false -o Acquire::https::Verify-Peer=false -y ca-certificates && \
+    : "Installing packages" && \
+    apt-get install --snapshot "${snapshot}" -y --no-install-recommends ssh sudo bash-completion && \
+    : "Clean up for improving reproducibility (optional)" && \
+    rm -rf /var/log/* /var/cache/ldconfig/aux-cache
+
+RUN \
+    : "Setting up sshd" && \
+    mkdir /var/run/sshd && \
+    sed -i 's/#PermitEmptyPasswords no/PermitEmptyPasswords yes/' /etc/ssh/sshd_config && \
+    echo "AuthenticationMethods none\n" >> /etc/ssh/sshd_config && \
+    : "Setting up ctf user" && \
+    useradd --create-home --comment "CTF image user" -s /bin/bash ctf && \
+    usermod -aG sudo ctf && \
+    echo "ctf ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/permissions && \
+    passwd -d ctf && \
+    echo 'source <(kubectl completion bash)' >> /home/ctf/.bashrc
+
+COPY --chown=ctf:ctf ./kubeconfig.yaml /home/ctf/.kube/config
+ADD --chmod=0755 --checksum=sha256:fbecbfd375b3686002c2e81d51c390172f5ffba3d6b47920d55342cb03f557af https://dl.k8s.io/release/v1.31.5/bin/linux/amd64/kubectl /usr/local/bin
+
+EXPOSE 22
+# Start SSH server
+CMD ["/usr/sbin/sshd", "-D"]

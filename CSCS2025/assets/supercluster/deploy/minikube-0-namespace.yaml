@@ -1,0 +1,30 @@
+# namespaces required to deploy the challenge
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: flag
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: entrypoint
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ctf
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/enforce-version: latest
+    pod-security.kubernetes.io/warn: restricted
+    pod-security.kubernetes.io/warn-version: latest
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: ctf
+  namespace: ctf
+spec:
+  hard:
+    limits.cpu: "1"
+    limits.memory: 500M

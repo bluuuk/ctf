@@ -1,0 +1,44 @@
+# set up the basic resources to spawn the ssh container and give it a service account
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: entrypoint
+  namespace: entrypoint
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: entrypoint
+  namespace: entrypoint
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: entrypoint
+  template:
+    metadata:
+      labels:
+        app: entrypoint
+    spec:
+      serviceAccountName: entrypoint
+      containers:
+        - name: entrypoint
+          image: kube-ssh
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 22
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: entrypoint
+  namespace: entrypoint
+spec:
+  type: NodePort
+  ports:
+    - port: 2022
+      targetPort: 22
+      protocol: TCP
+  selector:
+    app: entrypoint

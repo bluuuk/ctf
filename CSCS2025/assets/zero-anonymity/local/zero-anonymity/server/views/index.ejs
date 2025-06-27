@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Authenticated Search</title>
+    <style>
+        #intro {
+            background-image: url("/Cyberpunk.jpg");
+            background-size: cover;
+            height: 100vh;
+        }
+
+        #search-btn:hover {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <div id="intro" class="bg-image shadow-2-strong">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 100%;">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+            <div class="text-white" data-mdb-theme="dark">
+                <h1 class="mb-3">Authenticated Search</h1>
+                <h5 class="mb-4">search the web with the peace of mind that someone is watching over you</h5>
+                <% if (locals.error) { %>
+                    <div class="alert alert-danger" role="alert">
+                        <%= error %> Your IP has been recorded and this incident will be reported to the authorities.
+                    </div>
+                <% } %>                
+                <p>&nbsp;</p>
+                <form>
+                    <div class="form-group row">
+                      <input type="search" class="form-control" id="query" placeholder="search query">
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="form-group row">
+                        <label for="public-id" class="col-sm-3 col-form-label">Public identifier</label>
+                        <div class="col-sm-3">
+                            <input type="file" class="form-control-file" id="public-id" accept=".json">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="proof" class="col-sm-3 col-form-label">Proof of identity</label>
+                        <div class="col-sm-3">
+                            <input type="file" class="form-control-file" id="proof" accept=".json">
+                        </div>
+                    </div>
+                    <a id="search-btn" type="submit" class="btn btn-primary btn-outline-light btn-lg m-2" style="background-color: black;">Search!</a>
+                  </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            document.getElementById("search-btn").addEventListener("click", verifyProof);
+
+            async function verifyProof() {
+                const pubIdInput = document.getElementById("public-id");
+                const proofInput = document.getElementById("proof");
+                const query = document.getElementById("query");
+
+                async function parseJsonFile(file) {
+                    return new Promise((resolve, reject) => {
+                        try {
+                            const fileReader = new FileReader()
+                            fileReader.onload = event => resolve(JSON.parse(event.target.result));
+                            fileReader.onerror = error => reject(error);
+                            fileReader.readAsText(file);
+                        }
+                        catch {
+                            return undefined;
+                        }
+                    })
+                }
+
+                const pubId = await parseJsonFile(pubIdInput.files[0]);
+                const proof = await parseJsonFile(proofInput.files[0]);
+                
+                fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({pubid: pubId, proof: proof, query: query.value})
+                }).then(res => res.text())
+                .then((html) => {
+                    document.body.innerHTML = html;
+                    var searchBtn = document.getElementById("search-btn");
+                    if(searchBtn) {
+                        searchBtn.addEventListener("click", verifyProof);
+                    }
+                });
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Authenticated Search</title>
+    <style>
+        #intro {
+            background-image: url("Cyberpunk.jpg");
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <div id="intro" class="bg-image shadow-2-strong">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 100%;">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white" data-mdb-theme="dark">
+                    <div class="container-fluid" style="color: antiquewhite;">
+                        <% if (locals.flag) { %>
+                            <div class="alert alert-primary" role="alert">
+                                Congrats, you made it out (of the rabbit hole of this challenge)! <%= flag %>
+                            </div>
+                        <% } %>  
+                        <h3>Remember: we have your back and watch out for you.</h3>
+                        </br>
+                        <div>
+                            <iframe src="https://duckduckgo.com/search.html?width=250&prefill=<%= search %>&focus=yes" style="overflow:hidden;margin:0;padding:0;width:308px;height:40px;" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>

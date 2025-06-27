@@ -1,0 +1,1 @@
+hi -m assets/flaig_checker/flaig_checker.gguf --grammar-file assets/flaig_checker/grammer.gbnf

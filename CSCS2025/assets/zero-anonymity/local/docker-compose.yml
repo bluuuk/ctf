@@ -1,0 +1,8 @@
+services:
+  zero-anonymity:
+    image: zero-anonymity:latest
+    build: zero-anonymity
+    environment:
+      FLAG: flag{test_flag}
+    ports:
+      - "9000:9000"

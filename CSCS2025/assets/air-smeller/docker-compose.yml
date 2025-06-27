@@ -1,0 +1,10 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "3000:3000"
+  admin:
+    build: ./admin_bot
+    environment:
+      - "FLAG=FLAG{NOT_THE_REAL_FLAG}"
+      - "DOMAIN=web:3000"
