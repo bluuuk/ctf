@@ -11,7 +11,7 @@ d
 # %%
 
 payload = base64.b64decode(
-    "bmFtZT1hfGFuaW1hbD1ifGFkbWluPWZhbHNlfG1hYz0wYTM2NjI2ZDFhOWU5YWY0MTU1ZGQ4MjJlZWQ5ZWVkYzIyNDA4Mjdl")
+    "bmFtZT1hfGFuaW1hbD1ifGFkbWluPWZhbHNlfG1hYz0zOWY2MWE4OTAzNGRkMDIyNmJiYmNlZjY0MTc5OWI4YzFiYWM5MDdh")
 msg, token = payload.split(b"|mac=")
 msg, token
 
@@ -30,3 +30,5 @@ mac = sha.hexdigest()
 token = message + b"|mac=" + mac.encode("latin1")
 base64.b64encode(token).decode("latin1")
 
+
+# %%

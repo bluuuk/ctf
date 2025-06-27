@@ -1,0 +1,17 @@
+name: tes
+services:
+  web:
+    build: tudor-e-smecher
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PASSWORD=fake_password
+      - FLAG=ictf{fake_flag}
+      - URL=http://localhost:8000
+    restart:
+      unless-stopped
+  css:
+    build: CSSExfil
+    ports:
+      - "5001:5001"

