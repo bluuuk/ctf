@@ -1,0 +1,160 @@
+{
+  "projectVersion": 2,
+  "files": [
+    "filestorage.apk"
+  ],
+  "treeExpansionsV2": [
+    "t:JResources//lib//x86_64",
+    "t:JResources//lib//armeabi-v7a",
+    "t:JResources//lib//arm64-v8a",
+    "t:JResources//lib//x86",
+    "p:ctf.l3akctf.filestorage"
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "resource",
+      "tabPath": "lib/arm64-v8a/libstoreftw.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "resource",
+      "tabPath": "lib/x86/libstoreftw.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "resource",
+      "tabPath": "AndroidManifest.xml",
+      "subPath": "",
+      "caret": 1283,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "ctf.l3akctf.filestorage.MainActivity",
+      "subPath": "java",
+      "caret": 332,
+      "view": {
+        "x": 0,
+        "y": 38
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "ctf.l3akctf.filestorage.RootDetection",
+      "subPath": "java",
+      "caret": 4827,
+      "view": {
+        "x": 0,
+        "y": 1978
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "ctf.l3akctf.filestorage.R",
+      "subPath": "java",
+      "caret": 84,
+      "view": {
+        "x": 0,
+        "y": 6824
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "ctf.l3akctf.filestorage.root",
+      "subPath": "java",
+      "caret": 100,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "resource",
+      "tabPath": "lib/armeabi-v7a/libstoreftw.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "resource",
+      "tabPath": "lib/x86_64/libstoreftw.so",
+      "subPath": "",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": true,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    }
+  ],
+  "cacheDir": "/Users/bluk/Library/Caches/io.github.skylot.jadx/projects/filestorage-b937828542c730a9789770881920a67d",
+  "enableLiveReload": false,
+  "searchHistory": [],
+  "searchResourcesFilter": "*",
+  "searchResourcesSizeLimit": 0,
+  "pluginOptions": {}
+}
