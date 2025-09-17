@@ -1,0 +1,347 @@
+{
+  "projectVersion": 2,
+  "files": [
+    "SekaiBank.apk"
+  ],
+  "treeExpansionsV2": [
+    "c:com.sekai.bank.models.requests.FlagRequest",
+    "p:com.sekai.bank.models.responses",
+    "p:com.sekai.bank.network",
+    "p:com.sekai.bank.providers",
+    "p:com.sekai.bank.ui",
+    "c:com.sekai.bank.SekaiApplication",
+    "p:com.sekai.bank.databinding",
+    "p:com.sekai.bank.utils",
+    "t:JResources"
+  ],
+  "codeData": {
+    "comments": [],
+    "renames": []
+  },
+  "openTabs": [
+    {
+      "type": "resource",
+      "tabPath": "AndroidManifest.xml",
+      "subPath": "",
+      "caret": 4018,
+      "view": {
+        "x": 0,
+        "y": 1123
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.utils.delayed_transaction.BootReceiver",
+      "subPath": "java",
+      "caret": 227,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.SekaiApplication",
+      "subPath": "java",
+      "caret": 261,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.R",
+      "subPath": "java",
+      "caret": 76,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.MainActivity$$ExternalSyntheticLambda6",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.requests.FlagRequest",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.requests.LoginRequest",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": true,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.requests.PinRequest",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.requests.RegisterRequest",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.requests.SendMoneyRequest",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.Transaction",
+      "subPath": "java",
+      "caret": 127,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.User",
+      "subPath": "java",
+      "caret": 127,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.DelayedTransaction",
+      "subPath": "java",
+      "caret": 151,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.responses.HealthResponse",
+      "subPath": "java",
+      "caret": 87,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.models.responses.BalanceResponse",
+      "subPath": "java",
+      "caret": 87,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.network.ApiClient",
+      "subPath": "java",
+      "caret": 1306,
+      "view": {
+        "x": 0,
+        "y": 4454
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.network.ApiClient-IA",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.network.ApiService",
+      "subPath": "java",
+      "caret": 148,
+      "view": {
+        "x": 0,
+        "y": 934
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.ui.transactions.TransactionAdapter$TransactionViewHolder$$ExternalSyntheticLambda0",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.ui.transactions.TransactionAdapter",
+      "subPath": "java",
+      "caret": 469,
+      "view": {
+        "x": 0,
+        "y": 2654
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.sekai.bank.ui.send.SendMoneyFragment",
+      "subPath": "java",
+      "caret": 1441,
+      "view": {
+        "x": 0,
+        "y": 377
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    }
+  ],
+  "cacheDir": "/Users/bluk/Library/Caches/io.github.skylot.jadx/projects/SekaiBank-005f1474d7ea946047b30309567532b1",
+  "enableLiveReload": false,
+  "searchHistory": [
+    "FlagRequest",
+    "Flag"
+  ],
+  "searchResourcesFilter": "*",
+  "searchResourcesSizeLimit": 0,
+  "pluginOptions": {}
+}

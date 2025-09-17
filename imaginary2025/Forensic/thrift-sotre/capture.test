@@ -1,0 +1,1668 @@
+Frame 1030: 83 bytes on wire (664 bits), 83 bytes captured (664 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:24.718599138 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131524.718599138 seconds
+    [Time delta from previous captured frame: 0.002036219 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 8.836171621 seconds]
+    Frame Number: 1030
+    Frame Length: 83 bytes (664 bits)
+    Capture Length: 83 bytes (664 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 69
+    Identification: 0xa391 (41873)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x4cab [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54538, Dst Port: 9090, Seq: 1, Ack: 1, Len: 29
+    Source Port: 54538
+    Destination Port: 9090
+    [Stream index: 2]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 29]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 2574211576
+    [Next Sequence Number: 30    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 4112366894
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4aae [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.071646095 seconds]
+        [Time since previous frame in this TCP stream: 0.002036219 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.069609876 seconds]
+        [Bytes in flight: 29]
+        [Bytes sent since last PSH flag: 29]
+    TCP payload (29 bytes)
+    [PDU Size: 29]
+Thrift Protocol
+    Frame length: 25
+    CALL [version: 1, seqid: 0, method: createBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 12
+        Method: createBasket
+        Sequence Id: 0
+    Data
+        Type: T_STOP (0x00)
+
+Frame 1042: 130 bytes on wire (1040 bits), 130 bytes captured (1040 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:24.786714392 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131524.786714392 seconds
+    [Time delta from previous captured frame: 0.018213344 seconds]
+    [Time delta from previous displayed frame: 0.068115254 seconds]
+    [Time since reference or first frame: 8.904286875 seconds]
+    Frame Number: 1042
+    Frame Length: 130 bytes (1040 bits)
+    Capture Length: 130 bytes (1040 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47), Dst: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+    Destination: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.236.40.97, Dst: 192.168.61.129
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 116
+    Identification: 0x6af6 (27382)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8517 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 35.236.40.97
+    Destination Address: 192.168.61.129
+Transmission Control Protocol, Src Port: 9090, Dst Port: 54538, Seq: 1, Ack: 30, Len: 76
+    Source Port: 9090
+    Destination Port: 54538
+    [Stream index: 2]
+    [Conversation completeness: Incomplete, DATA (15)]
+    [TCP Segment Len: 76]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 4112366894
+    [Next Sequence Number: 77    (relative sequence number)]
+    Acknowledgment Number: 30    (relative ack number)
+    Acknowledgment number (raw): 2574211605
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xce72 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.139761349 seconds]
+        [Time since previous frame in this TCP stream: 0.066375501 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.069609876 seconds]
+        [Bytes in flight: 76]
+        [Bytes sent since last PSH flag: 76]
+    TCP payload (76 bytes)
+    [PDU Size: 76]
+Thrift Protocol
+    Frame length: 72
+    REPLY [version: 1, seqid: 0, method: createBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .010 = Message type: REPLY (0x02)
+        Length: 12
+        Method: createBasket
+        Sequence Id: 0
+    Data
+        Field Header #0
+            Type: T_STRUCT (0x0c)
+            Field Id: 0
+        Struct
+            Field Header #1
+                Type: T_BINARY (0x0b)
+                Field Id: 1
+                Length: 36
+            String: dba10fa9-ecc8-4b2c-a589-fd0415fad1c0
+            Type: T_STOP (0x00)
+        Type: T_STOP (0x00)
+
+Frame 1194: 83 bytes on wire (664 bits), 83 bytes captured (664 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:26.638998779 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131526.638998779 seconds
+    [Time delta from previous captured frame: 0.001421953 seconds]
+    [Time delta from previous displayed frame: 1.852284387 seconds]
+    [Time since reference or first frame: 10.756571262 seconds]
+    Frame Number: 1194
+    Frame Length: 83 bytes (664 bits)
+    Capture Length: 83 bytes (664 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 69
+    Identification: 0x0658 (1624)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xe9e4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54542, Dst Port: 9090, Seq: 1, Ack: 1, Len: 29
+    Source Port: 54542
+    Destination Port: 9090
+    [Stream index: 3]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 29]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 410434659
+    [Next Sequence Number: 30    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 2638990046
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4aae [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.069640514 seconds]
+        [Time since previous frame in this TCP stream: 0.001421953 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.068218561 seconds]
+        [Bytes in flight: 29]
+        [Bytes sent since last PSH flag: 29]
+    TCP payload (29 bytes)
+    [PDU Size: 29]
+Thrift Protocol
+    Frame length: 25
+    CALL [version: 1, seqid: 0, method: getInventory]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 12
+        Method: getInventory
+        Sequence Id: 0
+    Data
+        Type: T_STOP (0x00)
+
+Frame 1197: 1368 bytes on wire (10944 bits), 1368 bytes captured (10944 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:26.707974276 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131526.707974276 seconds
+    [Time delta from previous captured frame: 0.041880769 seconds]
+    [Time delta from previous displayed frame: 0.068975497 seconds]
+    [Time since reference or first frame: 10.825546759 seconds]
+    Frame Number: 1197
+    Frame Length: 1368 bytes (10944 bits)
+    Capture Length: 1368 bytes (10944 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47), Dst: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+    Destination: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.236.40.97, Dst: 192.168.61.129
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 1354
+    Identification: 0x6b01 (27393)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8036 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 35.236.40.97
+    Destination Address: 192.168.61.129
+Transmission Control Protocol, Src Port: 9090, Dst Port: 54542, Seq: 1, Ack: 30, Len: 1314
+    Source Port: 9090
+    Destination Port: 54542
+    [Stream index: 3]
+    [Conversation completeness: Incomplete, DATA (15)]
+    [TCP Segment Len: 1314]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 2638990046
+    [Next Sequence Number: 1315    (relative sequence number)]
+    Acknowledgment Number: 30    (relative ack number)
+    Acknowledgment number (raw): 410434688
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xf9f1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.138616011 seconds]
+        [Time since previous frame in this TCP stream: 0.067518627 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.068218561 seconds]
+        [Bytes in flight: 1314]
+        [Bytes sent since last PSH flag: 1314]
+    TCP payload (1314 bytes)
+    [PDU Size: 1314]
+Thrift Protocol
+    Frame length: 1310
+    REPLY [version: 1, seqid: 0, method: getInventory]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .010 = Message type: REPLY (0x02)
+        Length: 12
+        Method: getInventory
+        Sequence Id: 0
+    Data
+        Field Header #0
+            Type: T_STRUCT (0x0c)
+            Field Id: 0
+        Struct
+            Field Header #1
+                Type: T_LIST (0x0f)
+                Field Id: 1
+            List
+                Type: T_STRUCT (0x0c)
+                Number of List Items: 16
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 19
+                    String: apple-red-delicious
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 19
+                    String: Red Delicious Apple
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 120
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 49
+                    String: Crisp and sweet red apples, perfect for snacking.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 6
+                    String: banana
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 6
+                    String: Banana
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 90
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 13
+                    String: whole-milk-1l
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 15
+                    String: Whole Milk (1L)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 250
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 42
+                    String: Fresh whole milk sourced from local farms.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 16
+                    String: brown-eggs-dozen
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 18
+                    String: Brown Eggs (Dozen)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 450
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 20
+                    String: bread-sourdough-loaf
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 20
+                    String: Sourdough Bread Loaf
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 500
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 38
+                    String: Artisan sourdough with a crispy crust.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 11
+                    String: carrots-1kg
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 13
+                    String: Carrots (1kg)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 300
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 19
+                    String: chicken-breast-500g
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 21
+                    String: Chicken Breast (500g)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 750
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 43
+                    String: Lean chicken breast, skinless and boneless.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 16
+                    String: rice-basmati-1kg
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 18
+                    String: Basmati Rice (1kg)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 600
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 15
+                    String: olive-oil-500ml
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 30
+                    String: Extra Virgin Olive Oil (500ml)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 1200
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 40
+                    String: Cold-pressed, premium quality olive oil.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 19
+                    String: cheddar-cheese-200g
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 21
+                    String: Cheddar Cheese (200g)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 550
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 13
+                    String: tomatoes-500g
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 15
+                    String: Tomatoes (500g)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 280
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 38
+                    String: Juicy ripe tomatoes, great for salads.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 10
+                    String: onions-1kg
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 12
+                    String: Onions (1kg)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 250
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 15
+                    String: orange-juice-1l
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 17
+                    String: Orange Juice (1L)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 400
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 32
+                    String: 100% pure squeezed orange juice.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 12
+                    String: potatoes-2kg
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 14
+                    String: Potatoes (2kg)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 350
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 17
+                    String: yogurt-plain-500g
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 19
+                    String: Plain Yogurt (500g)
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 320
+                    Field Header #4
+                        Type: T_BINARY (0x0b)
+                        Field Id: 4
+                        Length: 32
+                    String: Thick and creamy natural yogurt.
+                    Type: T_STOP (0x00)
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 4
+                    String: flag
+                    Field Header #2
+                        Type: T_BINARY (0x0b)
+                        Field Id: 2
+                        Length: 4
+                    String: Flag
+                    Field Header #3
+                        Type: T_I64 (0x0a)
+                        Field Id: 3
+                    Integer64: 9999
+                    Type: T_STOP (0x00)
+            Type: T_STOP (0x00)
+        Type: T_STOP (0x00)
+
+Frame 1244: 123 bytes on wire (984 bits), 123 bytes captured (984 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:28.278821207 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131528.278821207 seconds
+    [Time delta from previous captured frame: 0.002112636 seconds]
+    [Time delta from previous displayed frame: 1.570846931 seconds]
+    [Time since reference or first frame: 12.396393690 seconds]
+    Frame Number: 1244
+    Frame Length: 123 bytes (984 bits)
+    Capture Length: 123 bytes (984 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 109
+    Identification: 0x4da4 (19876)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xa270 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54548, Dst Port: 9090, Seq: 1, Ack: 1, Len: 69
+    Source Port: 54548
+    Destination Port: 9090
+    [Stream index: 4]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 69]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1989379839
+    [Next Sequence Number: 70    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1180338361
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4ad6 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.071857958 seconds]
+        [Time since previous frame in this TCP stream: 0.002112636 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.069745322 seconds]
+        [Bytes in flight: 69]
+        [Bytes sent since last PSH flag: 69]
+    TCP payload (69 bytes)
+    [PDU Size: 69]
+Thrift Protocol
+    Frame length: 65
+    CALL [version: 1, seqid: 0, method: getBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 9
+        Method: getBasket
+        Sequence Id: 0
+    Data
+        Field Header #1
+            Type: T_BINARY (0x0b)
+            Field Id: 1
+            Length: 36
+        String: dba10fa9-ecc8-4b2c-a589-fd0415fad1c0
+        Type: T_STOP (0x00)
+
+Frame 1247: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:28.347180868 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131528.347180868 seconds
+    [Time delta from previous captured frame: 0.022282097 seconds]
+    [Time delta from previous displayed frame: 0.068359661 seconds]
+    [Time since reference or first frame: 12.464753351 seconds]
+    Frame Number: 1247
+    Frame Length: 92 bytes (736 bits)
+    Capture Length: 92 bytes (736 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47), Dst: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+    Destination: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.236.40.97, Dst: 192.168.61.129
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 78
+    Identification: 0x6b0c (27404)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8527 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 35.236.40.97
+    Destination Address: 192.168.61.129
+Transmission Control Protocol, Src Port: 9090, Dst Port: 54548, Seq: 1, Ack: 70, Len: 38
+    Source Port: 9090
+    Destination Port: 54548
+    [Stream index: 4]
+    [Conversation completeness: Incomplete, DATA (15)]
+    [TCP Segment Len: 38]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1180338361
+    [Next Sequence Number: 39    (relative sequence number)]
+    Acknowledgment Number: 70    (relative ack number)
+    Acknowledgment number (raw): 1989379908
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xf7f4 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.140217619 seconds]
+        [Time since previous frame in this TCP stream: 0.066742038 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.069745322 seconds]
+        [Bytes in flight: 38]
+        [Bytes sent since last PSH flag: 38]
+    TCP payload (38 bytes)
+    [PDU Size: 38]
+Thrift Protocol
+    Frame length: 34
+    REPLY [version: 1, seqid: 0, method: getBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .010 = Message type: REPLY (0x02)
+        Length: 9
+        Method: getBasket
+        Sequence Id: 0
+    Data
+        Field Header #0
+            Type: T_STRUCT (0x0c)
+            Field Id: 0
+        Struct
+            Field Header #1
+                Type: T_LIST (0x0f)
+                Field Id: 1
+            List
+                Type: T_STRUCT (0x0c)
+                Number of List Items: 0
+            Type: T_STOP (0x00)
+        Type: T_STOP (0x00)
+
+Frame 1285: 136 bytes on wire (1088 bits), 136 bytes captured (1088 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:29.704456961 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131529.704456961 seconds
+    [Time delta from previous captured frame: 0.000241756 seconds]
+    [Time delta from previous displayed frame: 1.357276093 seconds]
+    [Time since reference or first frame: 13.822029444 seconds]
+    Frame Number: 1285
+    Frame Length: 136 bytes (1088 bits)
+    Capture Length: 136 bytes (1088 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 122
+    Identification: 0x4e0b (19979)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xa1fc [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54554, Dst Port: 9090, Seq: 1, Ack: 1, Len: 82
+    Source Port: 54554
+    Destination Port: 9090
+    [Stream index: 5]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 82]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 2496042525
+    [Next Sequence Number: 83    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1888888990
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4ae3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.071087965 seconds]
+        [Time since previous frame in this TCP stream: 0.000241756 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.070846209 seconds]
+        [Bytes in flight: 82]
+        [Bytes sent since last PSH flag: 82]
+    TCP payload (82 bytes)
+    [PDU Size: 82]
+Thrift Protocol
+    Frame length: 78
+    CALL [version: 1, seqid: 0, method: addToBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 11
+        Method: addToBasket
+        Sequence Id: 0
+    Data
+        Field Header #1
+            Type: T_BINARY (0x0b)
+            Field Id: 1
+            Length: 36
+        String: dba10fa9-ecc8-4b2c-a589-fd0415fad1c0
+        Field Header #2
+            Type: T_BINARY (0x0b)
+            Field Id: 2
+            Length: 4
+        String: flag
+        Type: T_STOP (0x00)
+
+Frame 1287: 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:29.773970429 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131529.773970429 seconds
+    [Time delta from previous captured frame: 0.069235669 seconds]
+    [Time delta from previous displayed frame: 0.069513468 seconds]
+    [Time since reference or first frame: 13.891542912 seconds]
+    Frame Number: 1287
+    Frame Length: 82 bytes (656 bits)
+    Capture Length: 82 bytes (656 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47), Dst: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+    Destination: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.236.40.97, Dst: 192.168.61.129
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 68
+    Identification: 0x6b17 (27415)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8526 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 35.236.40.97
+    Destination Address: 192.168.61.129
+Transmission Control Protocol, Src Port: 9090, Dst Port: 54554, Seq: 1, Ack: 83, Len: 28
+    Source Port: 9090
+    Destination Port: 54554
+    [Stream index: 5]
+    [Conversation completeness: Incomplete, DATA (15)]
+    [TCP Segment Len: 28]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1888888990
+    [Next Sequence Number: 29    (relative sequence number)]
+    Acknowledgment Number: 83    (relative ack number)
+    Acknowledgment number (raw): 2496042607
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0xb746 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.140601433 seconds]
+        [Time since previous frame in this TCP stream: 0.069235669 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.070846209 seconds]
+        [Bytes in flight: 28]
+        [Bytes sent since last PSH flag: 28]
+    TCP payload (28 bytes)
+    [PDU Size: 28]
+Thrift Protocol
+    Frame length: 24
+    REPLY [version: 1, seqid: 0, method: addToBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .010 = Message type: REPLY (0x02)
+        Length: 11
+        Method: addToBasket
+        Sequence Id: 0
+    Data
+        Type: T_STOP (0x00)
+
+Frame 1327: 123 bytes on wire (984 bits), 123 bytes captured (984 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:31.260474643 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131531.260474643 seconds
+    [Time delta from previous captured frame: 0.000192463 seconds]
+    [Time delta from previous displayed frame: 1.486504214 seconds]
+    [Time since reference or first frame: 15.378047126 seconds]
+    Frame Number: 1327
+    Frame Length: 123 bytes (984 bits)
+    Capture Length: 123 bytes (984 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 109
+    Identification: 0xe259 (57945)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x0dbb [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54558, Dst Port: 9090, Seq: 1, Ack: 1, Len: 69
+    Source Port: 54558
+    Destination Port: 9090
+    [Stream index: 6]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 69]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 474690518
+    [Next Sequence Number: 70    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 179864394
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4ad6 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.068725420 seconds]
+        [Time since previous frame in this TCP stream: 0.000192463 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.068532957 seconds]
+        [Bytes in flight: 69]
+        [Bytes sent since last PSH flag: 69]
+    TCP payload (69 bytes)
+    [PDU Size: 69]
+Thrift Protocol
+    Frame length: 65
+    CALL [version: 1, seqid: 0, method: getBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 9
+        Method: getBasket
+        Sequence Id: 0
+    Data
+        Field Header #1
+            Type: T_BINARY (0x0b)
+            Field Id: 1
+            Length: 36
+        String: dba10fa9-ecc8-4b2c-a589-fd0415fad1c0
+        Type: T_STOP (0x00)
+
+Frame 1329: 108 bytes on wire (864 bits), 108 bytes captured (864 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:31.329883496 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131531.329883496 seconds
+    [Time delta from previous captured frame: 0.069125805 seconds]
+    [Time delta from previous displayed frame: 0.069408853 seconds]
+    [Time since reference or first frame: 15.447455979 seconds]
+    Frame Number: 1329
+    Frame Length: 108 bytes (864 bits)
+    Capture Length: 108 bytes (864 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47), Dst: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+    Destination: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.236.40.97, Dst: 192.168.61.129
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 94
+    Identification: 0x6b23 (27427)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x8500 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 35.236.40.97
+    Destination Address: 192.168.61.129
+Transmission Control Protocol, Src Port: 9090, Dst Port: 54558, Seq: 1, Ack: 70, Len: 54
+    Source Port: 9090
+    Destination Port: 54558
+    [Stream index: 6]
+    [Conversation completeness: Incomplete, DATA (15)]
+    [TCP Segment Len: 54]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 179864394
+    [Next Sequence Number: 55    (relative sequence number)]
+    Acknowledgment Number: 70    (relative ack number)
+    Acknowledgment number (raw): 474690587
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x0180 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.138134273 seconds]
+        [Time since previous frame in this TCP stream: 0.069125805 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.068532957 seconds]
+        [Bytes in flight: 54]
+        [Bytes sent since last PSH flag: 54]
+    TCP payload (54 bytes)
+    [PDU Size: 54]
+Thrift Protocol
+    Frame length: 50
+    REPLY [version: 1, seqid: 0, method: getBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .010 = Message type: REPLY (0x02)
+        Length: 9
+        Method: getBasket
+        Sequence Id: 0
+    Data
+        Field Header #0
+            Type: T_STRUCT (0x0c)
+            Field Id: 0
+        Struct
+            Field Header #1
+                Type: T_LIST (0x0f)
+                Field Id: 1
+            List
+                Type: T_STRUCT (0x0c)
+                Number of List Items: 1
+                Struct
+                    Field Header #1
+                        Type: T_BINARY (0x0b)
+                        Field Id: 1
+                        Length: 4
+                    String: flag
+                    Field Header #2
+                        Type: T_I8 (0x03)
+                        Field Id: 2
+                    Integer8: 1
+                    Type: T_STOP (0x00)
+            Type: T_STOP (0x00)
+        Type: T_STOP (0x00)
+
+Frame 1363: 128 bytes on wire (1024 bits), 128 bytes captured (1024 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:32.553855792 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131532.553855792 seconds
+    [Time delta from previous captured frame: 0.000187463 seconds]
+    [Time delta from previous displayed frame: 1.223972296 seconds]
+    [Time since reference or first frame: 16.671428275 seconds]
+    Frame Number: 1363
+    Frame Length: 128 bytes (1024 bits)
+    Capture Length: 128 bytes (1024 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 114
+    Identification: 0x40ca (16586)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0xaf45 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54566, Dst Port: 9090, Seq: 1, Ack: 1, Len: 74
+    Source Port: 54566
+    Destination Port: 9090
+    [Stream index: 7]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 74]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1779780880
+    [Next Sequence Number: 75    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1888327506
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4adb [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.070887291 seconds]
+        [Time since previous frame in this TCP stream: 0.000187463 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.070699828 seconds]
+        [Bytes in flight: 74]
+        [Bytes sent since last PSH flag: 74]
+    TCP payload (74 bytes)
+    [PDU Size: 74]
+Thrift Protocol
+    Frame length: 70
+    CALL [version: 1, seqid: 0, method: pay]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 3
+        Method: pay
+        Sequence Id: 0
+    Data
+        Field Header #1
+            Type: T_BINARY (0x0b)
+            Field Id: 1
+            Length: 36
+        String: dba10fa9-ecc8-4b2c-a589-fd0415fad1c0
+        Field Header #2
+            Type: T_I64 (0x0a)
+            Field Id: 2
+        Integer64: 9999
+        Type: T_STOP (0x00)
+
+Frame 1365: 116 bytes on wire (928 bits), 116 bytes captured (928 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:32.620408354 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131532.620408354 seconds
+    [Time delta from previous captured frame: 0.066259430 seconds]
+    [Time delta from previous displayed frame: 0.066552562 seconds]
+    [Time since reference or first frame: 16.737980837 seconds]
+    Frame Number: 1365
+    Frame Length: 116 bytes (928 bits)
+    Capture Length: 116 bytes (928 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47), Dst: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+    Destination: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 35.236.40.97, Dst: 192.168.61.129
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 102
+    Identification: 0x6b2d (27437)
+    000. .... = Flags: 0x0
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x84ee [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 35.236.40.97
+    Destination Address: 192.168.61.129
+Transmission Control Protocol, Src Port: 9090, Dst Port: 54566, Seq: 1, Ack: 75, Len: 62
+    Source Port: 9090
+    Destination Port: 54566
+    [Stream index: 7]
+    [Conversation completeness: Incomplete, DATA (15)]
+    [TCP Segment Len: 62]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1888327506
+    [Next Sequence Number: 63    (relative sequence number)]
+    Acknowledgment Number: 75    (relative ack number)
+    Acknowledgment number (raw): 1779780954
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x5f8f [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.137439853 seconds]
+        [Time since previous frame in this TCP stream: 0.066259430 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.070699828 seconds]
+        [Bytes in flight: 62]
+        [Bytes sent since last PSH flag: 62]
+    TCP payload (62 bytes)
+    [PDU Size: 62]
+Thrift Protocol
+    Frame length: 58
+    REPLY [version: 1, seqid: 0, method: pay]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .010 = Message type: REPLY (0x02)
+        Length: 3
+        Method: pay
+        Sequence Id: 0
+    Data
+        Field Header #0
+            Type: T_STRUCT (0x0c)
+            Field Id: 0
+        Struct
+            Field Header #1
+                Type: T_BINARY (0x0b)
+                Field Id: 1
+                Length: 31
+            String: ictf{l1k3_gRPC_bUt_l3ss_g0ogly}
+            Type: T_STOP (0x00)
+        Type: T_STOP (0x00)
+
+Frame 1402: 123 bytes on wire (984 bits), 123 bytes captured (984 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:33.849814511 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131533.849814511 seconds
+    [Time delta from previous captured frame: 0.001701999 seconds]
+    [Time delta from previous displayed frame: 1.229406157 seconds]
+    [Time since reference or first frame: 17.967386994 seconds]
+    Frame Number: 1402
+    Frame Length: 123 bytes (984 bits)
+    Capture Length: 123 bytes (984 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:thrift]
+Ethernet II, Src: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f), Dst: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+    Destination: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        Address: 00:50:56:e9:4d:47 (00:50:56:e9:4d:47)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        Address: 00:0c:29:c2:74:7f (00:0c:29:c2:74:7f)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.61.129, Dst: 35.236.40.97
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 109
+    Identification: 0x8a08 (35336)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 64
+    Protocol: TCP (6)
+    Header Checksum: 0x660c [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.61.129
+    Destination Address: 35.236.40.97
+Transmission Control Protocol, Src Port: 54576, Dst Port: 9090, Seq: 1, Ack: 1, Len: 69
+    Source Port: 54576
+    Destination Port: 9090
+    [Stream index: 8]
+    [Conversation completeness: Incomplete, ESTABLISHED (7)]
+    [TCP Segment Len: 69]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 3065912934
+    [Next Sequence Number: 70    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 3830048493
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 64240
+    [Calculated window size: 64240]
+    [Window size scaling factor: -2 (no window scaling used)]
+    Checksum: 0x4ad6 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.070223469 seconds]
+        [Time since previous frame in this TCP stream: 0.001701999 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.068521470 seconds]
+        [Bytes in flight: 69]
+        [Bytes sent since last PSH flag: 69]
+    TCP payload (69 bytes)
+    [PDU Size: 69]
+Thrift Protocol
+    Frame length: 65
+    CALL [version: 1, seqid: 0, method: getBasket]
+        Protocol id: Strict Binary Protocol (0x80)
+        ...0 0001 = Version: 1
+        .... .001 = Message type: CALL (0x01)
+        Length: 9
+        Method: getBasket
+        Sequence Id: 0
+    Data
+        Field Header #1
+            Type: T_BINARY (0x0b)
+            Field Id: 1
+            Length: 36
+        String: dba10fa9-ecc8-4b2c-a589-fd0415fad1c0
+        Type: T_STOP (0x00)
+
+Frame 1404: 91 bytes on wire (728 bits), 91 bytes captured (728 bits) on interface eth0, id 0
+    Section number: 1
+    Interface id: 0 (eth0)
+        Interface name: eth0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep  6, 2025 06:05:33.921484681 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1757131533.921484681 seconds
+    [Time delta from previous captured frame: 0.068774934 seconds]
+    [Time delta from previous displayed frame: 0.071670170 seconds]
+    [Time since reference or first frame: 18.039057164 seconds]
+    Frame Number: 1404
+    F

@@ -1,0 +1,10 @@
+{
+  "supply_type": "flag",
+  "destination": "x",
+  "origin": "y",
+  "weight": "1",
+  "departure": "now",
+  "arrival": "soon",
+  "priority": "high",
+  "vessel": "sss"
+}

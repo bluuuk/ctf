@@ -77,7 +77,7 @@ window.location.search
 
 - We just assume that the Query script takes the input and parses it into a dict for now
 
-```
+```javascript
 QueryArg.parseQuery(window.location.search)
 Object { note: "test\r\n" }
 ```
@@ -85,7 +85,7 @@ Object { note: "test\r\n" }
 - Take the key `note` from the query and extract it's value
 - The framework also supports arrays
 
-```
+```javascript
 res = QueryArg.parseQuery("?note[1]=1&note[2]=3")
 Object { note: (3) […] }
 
@@ -98,6 +98,7 @@ Array(3) [ <1 empty slot>, 1, 3 ]
 
 - So, what does [`sanitizeHtml(txt)`](https://www.npmjs.com/package/sanitize-html) do?
 - From it's page, it blocks
+
 ```javascript
 console.log(sanitizeHtml("<strong>hello world</strong>"));
 console.log(sanitizeHtml("<img src=x onerror=alert('img') />")); // this!!
@@ -107,7 +108,7 @@ console.log(sanitizeHtml("<script>alert('hello world')</script>")); // this!!
 
 
 
-````
+```
 tst("__proto__[innerText]=<svg onload=alert(3)>&note=ignored")
 "ignored"
 tst("note=</div>onload= <div>")
