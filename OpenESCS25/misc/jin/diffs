@@ -1,0 +1,17 @@
+❯ diff jinjail/app.py jinjail2/app.py
+15,16d14
+<     if "module" in content:
+<         return "funny (ab)user."
+17a16,17
+>     if "sys" in content or "__" in content or len(content) > 150:
+>         return "funny (ab)user."
+19d18
+<         assert len(content) < 75
+
+❯ diff jinjail/app.py jinjail-revenge/app.py
+
+❯ diff jinjail2/app.py jinjail2-revenge/app.py
+16c16
+<     if "sys" in content or "__" in content or len(content) > 150:
+---
+>     if "sys" in content or "__" in content or len(content) > 140:

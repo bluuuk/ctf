@@ -1,0 +1,27 @@
+24d23
+<       "io.buildah.version": "1.41.4",
+30c29
+<   "created": "2025-09-29T04:15:31.880237593Z",
+---
+>   "created": "2025-08-13T16:34:01Z",
+137,149d135
+<     },
+<     {
+<       "comment": "FROM localhost:8080/nginx:alpine",
+<       "created": "2025-09-29T04:15:31.000872664Z",
+<       "created_by": "/bin/sh -c #(nop) COPY file:7032588428981af4e7c97d3f06b5c738bb14b6f4e8796ef5dafc99019d3f64a0 in /usr/share/nginx/html/index.html      "
+<     },
+<     {
+<       "created": "2025-09-29T04:15:31.43275856Z",
+<       "created_by": "/bin/sh -c #(nop) COPY file:3e5ace0f1f086ede18ec60f850adde388cfb6d959a9f845d25bade617ae6e75d in /usr/share/nginx/html/secret.html      "
+<     },
+<     {
+<       "created": "2025-09-29T04:15:31.881309748Z",
+<       "created_by": "/bin/sh -c #(nop) COPY file:9e0fe8d5802ff283620e6186a1b4fa523d17a9b32a580e683816b0bce5aeee93 in /usr/share/nginx/html/.env      "
+162,165c148
+<       "sha256:f9985d3fc94dfae94021c560b6c8878e21f19f39a4c1f58051a535d2f0c2b165",
+<       "sha256:70ee024f0b55ac09bf850350d683c9d4da71b77bd54f30e00124910caa007106",
+<       "sha256:a34af4d33310b4dc4270d126b3114c4ab7d4c74c2229a63d798196f6c8981ef4",
+<       "sha256:8bf5dda669032b8dd4d2934b341dbc6b1b5062f0737c8937bea69e2a84865aae"
+---
+>       "sha256:f9985d3fc94dfae94021c560b6c8878e21f19f39a4c1f58051a535d2f0c2b165"

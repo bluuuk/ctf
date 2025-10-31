@@ -1,0 +1,33 @@
+4,6c4,6
+<     "org.opencontainers.image.base.digest": "sha256:3d70e5ff6ceeaaf42ef4249b02b8786f670dd5c4fd53753a1b1ab43857fbf10f",
+<     "org.opencontainers.image.base.name": "localhost:8080/nginx:alpine",
+<     "org.opencontainers.image.created": "2025-09-29T04:15:31.880237593Z",
+---
+>     "org.opencontainers.image.base.digest": "sha256:94f11b88c5d30105df2236d818a2dd50577bd2314f70374ae53ccaec61ac34f0",
+>     "org.opencontainers.image.base.name": "nginx:1.29.1-alpine-slim",
+>     "org.opencontainers.image.created": "2025-08-13T16:34:01Z",
+13c13
+<     "digest": "sha256:0e228305fbf306ac95206e8bdb3daf56e2917fbb2ad006699b2a4af9ce7cca2d",
+---
+>     "digest": "sha256:4a86014ec6994761b7f3118cf47e4b4fd6bac15fc6fa262c4f356386bbc0e9d9",
+15c15
+<     "size": 11669
+---
+>     "size": 10783
+57,71d56
+<     },
+<     {
+<       "digest": "sha256:b153e3b4cda6f6cf6530d363993424af6ea2de996a8a33a90403185a8a9d114e",
+<       "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+<       "size": 234
+<     },
+<     {
+<       "digest": "sha256:0899dc162465d95f179bef3d6e3096618c503fc8b634cc688560c583c3694b69",
+<       "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+<       "size": 238
+<     },
+<     {
+<       "digest": "sha256:ed14ee4edc82783d49e5dfee29bcd8649dc701051bcca1fb1dd90f40d0da9038",
+<       "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+<       "size": 250
+

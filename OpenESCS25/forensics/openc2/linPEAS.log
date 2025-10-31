@@ -1,0 +1,1008 @@
+c2:/server# wget "https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh"
+<ss-ng/PEASS-ng/releases/latest/download/linpeas.sh"
+Connecting to github.com (140.82.121.3:443)
+Connecting to github.com (140.82.121.3:443)
+Connecting to release-assets.githubusercontent.com (185.199.109.133:443)
+saving to 'linpeas.sh'
+linpeas.sh           100% |********************************|  939k  0:00:00 ETA
+'linpeas.sh' saved
+c2:/server# chmod u+x linpeas.sh          
+chmod u+x linpeas.sh
+c2:/server# ./linpeas.sh
+./linpeas.sh
+
+
+
+                            ▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                    ▄▄▄▄▄▄▄             ▄▄▄▄▄▄▄▄
+             ▄▄▄▄▄▄▄      ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄
+         ▄▄▄▄     ▄ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄▄
+         ▄    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄       ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         ▄▄▄▄▄▄▄▄▄▄▄          ▄▄▄▄▄▄               ▄▄▄▄▄▄ ▄
+         ▄▄▄▄▄▄              ▄▄▄▄▄▄▄▄                 ▄▄▄▄ 
+         ▄▄                  ▄▄▄ ▄▄▄▄▄                  ▄▄▄
+         ▄▄                ▄▄▄▄▄▄▄▄▄▄▄▄                  ▄▄
+         ▄            ▄▄ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄   ▄▄
+         ▄      ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         ▄▄▄▄▄▄▄▄▄▄▄▄▄▄                                ▄▄▄▄
+         ▄▄▄▄▄  ▄▄▄▄▄                       ▄▄▄▄▄▄     ▄▄▄▄
+         ▄▄▄▄   ▄▄▄▄▄                       ▄▄▄▄▄      ▄ ▄▄
+         ▄▄▄▄▄  ▄▄▄▄▄        ▄▄▄▄▄▄▄        ▄▄▄▄▄     ▄▄▄▄▄
+         ▄▄▄▄▄▄  ▄▄▄▄▄▄▄      ▄▄▄▄▄▄▄      ▄▄▄▄▄▄▄   ▄▄▄▄▄ 
+          ▄▄▄▄▄▄▄▄▄▄▄▄▄▄        ▄          ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ 
+         ▄▄▄▄▄▄▄▄▄▄▄▄▄                       ▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         ▄▄▄▄▄▄▄▄▄▄▄                         ▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄            ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+          ▀▀▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄▀▀▀▀▀▀
+               ▀▀▀▄▄▄▄▄      ▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▀▀
+                     ▀▀▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▀▀▀
+
+    /---------------------------------------------------------------------------------\
+    |                             Do you like PEASS?                                  |
+    |---------------------------------------------------------------------------------|
+    |         Learn Cloud Hacking       :     https://training.hacktricks.xyz         |
+    |         Follow on Twitter         :     @hacktricks_live                        |
+    |         Respect on HTB            :     SirBroccoli                             |
+    |---------------------------------------------------------------------------------|
+    |                                 Thank you!                                      |
+    \---------------------------------------------------------------------------------/
+          LinPEAS-ng by carlospolop
+
+ADVISORY: This script should be used for authorized penetration testing and/or educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it at your own computers and/or with the computer owner's permission.
+
+Linux Privesc Checklist: https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html
+ LEGEND:
+  RED/YELLOW: 95% a PE vector
+  RED: You should take a look to it
+  LightCyan: Users with console
+  Blue: Users without console & mounted devs
+  Green: Common things (users, groups, SUID/SGID, mounts, .sh scripts, cronjobs) 
+  LightMagenta: Your username
+
+  YOU ARE ALREADY ROOT!!! (it could take longer to complete execution)
+
+ Starting LinPEAS. Caching Writable Folders...
+                               ╔═══════════════════╗
+═══════════════════════════════╣ Basic information ╠═══════════════════════════════
+                               ╚═══════════════════╝
+OS: Linux version 6.12.45-talos (root@buildkitsandbox) (gcc (GCC) 14.3.0, GNU ld (GNU Binutils) 2.44) #1 SMP Fri Sep  5 14:37:08 UTC 2025
+User & Groups: uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+Hostname: c2
+
+[+] /bin/ping is available for network discovery (LinPEAS can discover hosts, learn more with -h)
+[+] /bin/bash is available for network discovery, port scanning and port forwarding (LinPEAS can discover hosts, scan ports, and forward ports. Learn more with -h)
+[+] /usr/bin/nc is available for network discovery & port scanning (LinPEAS can discover hosts and scan ports, learn more with -h)
+
+
+Caching directories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . DONE
+
+                              ╔════════════════════╗
+══════════════════════════════╣ System Information ╠══════════════════════════════
+                              ╚════════════════════╝
+╔══════════╣ Operative system
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#kernel-exploits
+Linux version 6.12.45-talos (root@buildkitsandbox) (gcc (GCC) 14.3.0, GNU ld (GNU Binutils) 2.44) #1 SMP Fri Sep  5 14:37:08 UTC 2025
+lsb_release Not Found
+
+╔══════════╣ Sudo version
+sudo Not Found
+
+
+╔══════════╣ PATH
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#writable-path-abuses
+
+╔══════════╣ Date & uptime
+Thu Oct  2 20:19:22 UTC 2025
+ 20:19:22 up 4 days,  2:53,  0 users,  load average: 1.60, 1.45, 1.45
+
+╔══════════╣ Unmounted file-system?
+╚ Check if you can mount umounted devices
+/dev[1;32m/cdrom[0m	/media[1;32m/cdrom[0m	iso9660	noauto,ro 0 0
+/dev/usbdisk	/media/usb	vfat	noauto,ro 0 0
+
+╔══════════╣ Any sd*/disk* disk in /dev? (limit 20)
+
+╔══════════╣ Environment
+╚ Any private information inside environment variables?
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_PORT=tcp://10.0.96.1:443
+HOSTNAME=c2
+SOCAT_PEERADDR=10.0.134.79
+SHLVL=4
+CHALLENGE_NAMESPACE=challenge-fb300cea-fa25-5ff1-9f33-095f9d9836b2
+HOME=/root
+SOCAT_PEERPORT=33644
+SOCAT_SOCKADDR=10.0.135.144
+SOCAT_VERSION=1.8.0.3
+SOCAT_SOCKPORT=12345
+_=./linpeas.sh
+KUBERNETES_PORT_443_TCP_ADDR=10.0.96.1
+C2_ENDPOINT=ad8957fd-ed5a-48a1-a2df-8aa08c3bc983.openec.sc:1337
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+SHELL_ENDPOINT=c5b61a63-1ade-4041-bca0-fe33f1752e18.openec.sc:31337
+KUBERNETES_SERVICE_PORT_HTTPS=443
+KUBERNETES_PORT_443_TCP=tcp://10.0.96.1:443
+PWD=/server
+SOCAT_PID=9813
+KUBERNETES_SERVICE_HOST=10.0.96.1
+SOCAT_PPID=11
+
+╔══════════╣ Searching Signature verification failed in dmesg
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#dmesg-signature-verification-failed
+dmesg Not Found
+
+╔══════════╣ Executing Linux Exploit Suggester
+╚ https://github.com/mzet-/linux-exploit-suggester
+zcat: write error: Broken pipe
+zcat: write: Broken pipe
+[+] [CVE-2022-2586] nft_object UAF
+
+   Details: https://www.openwall.com/lists/oss-security/2022/08/29/5
+   Exposure: less probable
+   Tags: ubuntu=(20.04){kernel:5.12.13}
+   Download URL: https://www.openwall.com/lists/oss-security/2022/08/29/5/1
+   Comments: kernel.unprivileged_userns_clone=1 required (to obtain CAP_NET_ADMIN)
+
+[+] [CVE-2021-22555] Netfilter heap out-of-bounds write
+
+   Details: https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html
+   Exposure: less probable
+   Tags: ubuntu=20.04{kernel:5.8.0-*}
+   Download URL: https://raw.githubusercontent.com/google/security-research/master/pocs/linux/cve-2021-22555/exploit.c
+   ext-url: https://raw.githubusercontent.com/bcoles/kernel-exploits/master/CVE-2021-22555/exploit.c
+   Comments: ip_tables kernel module must be loaded
+
+
+╔══════════╣ Protections
+═╣ AppArmor enabled? .............. AppArmor Not Found
+═╣ AppArmor profile? .............. system_u:system_r:pod_t:s0═╣ is linuxONE? ................... s390x Not Found
+═╣ grsecurity present? ............ grsecurity Not Found
+═╣ PaX bins present? .............. PaX Not Found
+═╣ Execshield enabled? ............ Execshield Not Found
+═╣ SELinux enabled? ............... sestatus Not Found
+═╣ Seccomp enabled? ............... enabled
+═╣ User namespace? ................ enabled
+═╣ Cgroup2 enabled? ............... enabled
+═╣ Is ASLR enabled? ............... Yes
+═╣ Printer? ....................... No
+═╣ Is this a virtual machine? ..... Yes
+
+╔══════════╣ Kernel Modules Information
+══╣ Kernel modules with weak perms?
+/lib/modules Not Found
+
+══╣ Kernel modules loadable? 
+Modules can be loaded
+
+
+
+                                   ╔═══════════╗
+═══════════════════════════════════╣ Container ╠═══════════════════════════════════
+                                   ╚═══════════╝
+╔══════════╣ Container related tools present (if any):
+/usr/bin/nsenter
+/usr/bin/unshare
+/usr/sbin/chroot
+
+╔══════════╣ Container details
+═╣ Is this a container? ........... No
+═╣ Any running containers? ........ No
+
+
+
+                                     ╔═══════╗
+═════════════════════════════════════╣ Cloud ╠═════════════════════════════════════
+                                     ╚═══════╝
+wget: server returned error: HTTP/1.1 404 Not Found
+Learn and practice cloud hacking techniques in https://training.hacktricks.xyz
+
+═╣ GCP Virtual Machine? ................. No
+═╣ GCP Cloud Funtion? ................... No
+═╣ AWS ECS? ............................. No
+═╣ AWS EC2? ............................. No
+═╣ AWS EC2 Beanstalk? ................... No
+═╣ AWS Lambda? .......................... No
+═╣ AWS Codebuild? ....................... No
+═╣ DO Droplet? .......................... No
+═╣ IBM Cloud VM? ........................ No
+═╣ Azure VM or Az metadata? ............. No
+═╣ Azure APP or IDENTITY_ENDPOINT? ...... No
+═╣ Azure Automation Account? ............ No
+═╣ Aliyun ECS? .......................... No
+═╣ Tencent CVM? ......................... No
+
+
+
+                ╔════════════════════════════════════════════════╗
+════════════════╣ Processes, Crons, Timers, Services and Sockets ╠════════════════
+                ╚════════════════════════════════════════════════╝
+╔══════════╣ Running processes (cleaned)
+╚ Check weird & unexpected processes run by root: https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#processes
+PID   USER     TIME  COMMAND
+1 root      0:00 {start.sh} /bin/sh /server/start.sh
+9 root      0:27 python3 ./main.py
+11 root      0:00 socat TCP-LISTEN:12345,reuseaddr,fork EXEC:/bin/sh,pty,stderr,setsid,sigint,sane
+9813 root      0:00 socat TCP-LISTEN:12345,reuseaddr,fork EXEC:/bin/sh,pty,stderr,setsid,sigint,sane
+9814 root      0:00 /bin/sh
+9816 root      0:00 bash
+9834 root      0:00 {linpeas.sh} /bin/sh ./linpeas.sh
+12029 root      0:00 {linpeas.sh} /bin/sh ./linpeas.sh
+12031 root      0:00 ps fauxwww
+12033 root      0:00 {linpeas.sh} /bin/sh ./linpeas.sh
+
+╔══════════╣ Processes with unusual configurations
+
+╔══════════╣ Processes with credentials in memory (root req)
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#credentials-from-process-memory
+gdm-password Not Found
+gnome-keyring-daemon Not Found
+lightdm Not Found
+vsftpd Not Found
+apache2 Not Found
+sshd: Not Found
+mysql Not Found
+postgres Not Found
+redis-server Not Found
+mongod Not Found
+memcached Not Found
+elasticsearch Not Found
+jenkins Not Found
+tomcat Not Found
+nginx Not Found
+php-fpm Not Found
+supervisord Not Found
+vncserver Not Found
+xrdp Not Found
+teamviewer Not Found
+
+╔══════════╣ Opened Files by processes
+
+╔══════════╣ Processes with memory-mapped credential files
+
+╔══════════╣ Processes whose PPID belongs to a different user (not root)
+╚ You will know if a user can somehow spawn processes as a different user
+
+╔══════════╣ Check for vulnerable cron jobs
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#scheduledcron-jobs
+══╣ Cron jobs list
+/usr/bin/crontab
+# do daily/weekly/monthly maintenance
+# min	hour	day	month	weekday	command
+*/15	*	*	*	*	run-parts /etc/periodic/15min
+0	*	*	*	*	run-parts /etc/periodic/hourly
+0	2	*	*	*	run-parts /etc/periodic/daily
+0	3	*	*	6	run-parts /etc/periodic/weekly
+0	5	1	*	*	run-parts /etc/periodic/monthly
+
+incrontab Not Found
+lrwxrwxrwx    1 root     root            21 Jul 15 10:42 /var/spool/cron/crontabs -> ../../../etc/crontabs
+
+/etc/crontabs:
+total 4
+drwxr-xr-x    2 root     root            18 Jul 15 10:42 .
+drwxr-xr-x    1 root     root            25 Oct  2 19:36 ..
+-rw-------    1 root     root           283 Mar 25  2025 root
+*/15	*	*	*	*	run-parts /etc/periodic/15min
+0	*	*	*	*	run-parts /etc/periodic/hourly
+0	2	*	*	*	run-parts /etc/periodic/daily
+0	3	*	*	6	run-parts /etc/periodic/weekly
+0	5	1	*	*	run-parts /etc/periodic/monthly
+
+# do daily/weekly/monthly maintenance
+# min	hour	day	month	weekday	command
+*/15	*	*	*	*	run-parts /etc/periodic/15min
+0	*	*	*	*	run-parts /etc/periodic/hourly
+0	2	*	*	*	run-parts /etc/periodic/daily
+0	3	*	*	6	run-parts /etc/periodic/weekly
+0	5	1	*	*	run-parts /etc/periodic/monthly
+
+/etc/periodic/:
+total 0
+drwxr-xr-x    2 root     root             6 Jul 15 10:42 15min
+drwxr-xr-x    2 root     root             6 Jul 15 10:42 daily
+drwxr-xr-x    2 root     root             6 Jul 15 10:42 hourly
+drwxr-xr-x    2 root     root             6 Jul 15 10:42 monthly
+drwxr-xr-x    2 root     root             6 Jul 15 10:42 weekly
+
+/etc/periodic/15min:
+total 0
+
+/etc/periodic/daily:
+total 0
+
+/etc/periodic/hourly:
+total 0
+
+/etc/periodic/monthly:
+total 0
+
+/etc/periodic/weekly:
+total 0
+
+══╣ Checking for specific cron jobs vulnerabilities
+Checking cron directories...
+Writable cron directory: /var/spool/cron/crontabs
+Writable cron directory: /etc/periodic
+
+╔══════════╣ System timers
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#timers
+══╣ Active timers:
+══╣ Disabled timers:
+
+╔══════════╣ Services and Service Files
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#services
+
+══╣ Active services:
+
+══╣ Disabled services:
+You can't write on systemd PATH
+
+╔══════════╣ Systemd Information
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#systemd-path---relative-paths
+═╣ Systemd version and vulnerabilities? .............. systemctl Not Found
+═╣ Services running as root? ..... systemctl Not Found
+
+═╣ Running services with dangerous capabilities? ... systemctl Not Found
+
+═╣ Services with writable paths? . systemctl Not Found
+
+
+╔══════════╣ Systemd PATH
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#systemd-path---relative-paths
+systemctl Not Found
+
+╔══════════╣ D-Bus Analysis
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#d-bus
+busctl Not Found
+
+╔══════════╣ Legacy r-commands (rsh/rlogin/rexec) and host-based trust
+
+══╣ Listening r-services (TCP 512-514)
+
+══╣ systemd units exposing r-services
+systemctl Not Found
+
+══╣ inetd/xinetd configuration for r-services
+/etc/inetd.conf Not Found
+/etc/xinetd.d Not Found
+
+══╣ Installed r-service server packages
+dpkg|rpm Not Found
+
+══╣ /etc/hosts.equiv and /etc/shosts.equiv
+
+══╣ Per-user .rhosts files
+.rhosts Not Found
+
+══╣ PAM rhosts authentication
+/etc/pam.d/rlogin|rsh Not Found
+
+══╣ SSH HostbasedAuthentication
+/etc/ssh/sshd_config Not Found
+
+══╣ Potential DNS control indicators (local)
+  Not detected
+
+
+
+                              ╔═════════════════════╗
+══════════════════════════════╣ Network Information ╠══════════════════════════════
+                              ╚═════════════════════╝
+╔══════════╣ Interfaces
+eth0      Link encap:Ethernet  HWaddr 56:B1:E7:DA:B0:A2  
+          inet addr:10.0.135.144  Bcast:0.0.0.0  Mask:255.255.255.255
+          inet6 addr: fe80::54b1:e7ff:feda:b0a2/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1450  Metric:1
+          RX packets:72654 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:54571 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:9577372 (9.1 MiB)  TX bytes:14740067 (14.0 MiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+
+╔══════════╣ Hostname, hosts and DNS
+══╣ Hostname Information
+System hostname: c2
+FQDN: c2
+
+══╣ Hosts File Information
+Contents of /etc/hosts:
+  127.0.0.1	localhost
+  ::1	localhost ip6-localhost ip6-loopback
+  fe00::0	ip6-localnet
+  fe00::0	ip6-mcastprefix
+  fe00::1	ip6-allnodes
+  fe00::2	ip6-allrouters
+  10.0.135.144	c2
+
+══╣ DNS Configuration
+DNS Servers (resolv.conf):
+  search challenge-fb300cea-fa25-5ff1-9f33-095f9d9836b2.svc.cluster.local svc.cluster.local cluster.local
+  10.0.96.10
+
+DNS Domain Information:
+
+╔══════════╣ Active Ports
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#open-ports
+══╣ Active Ports (netstat)
+tcp        0      0 0.0.0.0:12345           0.0.0.0:*               LISTEN      11/socat
+tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      9/python3
+
+╔══════════╣ Network Traffic Analysis Capabilities
+
+══╣ Available Sniffing Tools
+No sniffing tools found
+
+══╣ Network Interfaces Sniffing Capabilities
+Interface tunl0@NONE: Not sniffable
+Interface sit0@NONE: Not sniffable
+Interface ip6tnl0@NONE: Not sniffable
+Interface eth0@if6614: Not sniffable
+No sniffable interfaces found
+
+╔══════════╣ Firewall Rules Analysis
+
+══╣ Iptables Rules
+iptables Not Found
+
+══╣ Nftables Rules
+nftables Not Found
+
+══╣ Firewalld Rules
+firewalld Not Found
+
+══╣ UFW Rules
+ufw Not Found
+
+╔══════════╣ Inetd/Xinetd Services Analysis
+
+══╣ Inetd Services
+inetd Not Found
+
+══╣ Xinetd Services
+xinetd Not Found
+
+══╣ Running Inetd/Xinetd Services
+Active Services (from netstat):
+
+Running Service Processes:
+
+╔══════════╣ Internet Access?
+Port 80 is accessible
+Port 443 is accessible
+ICMP is accessible
+Port 443 is not accessible with wget
+DNS is not accessible
+
+
+
+                               ╔═══════════════════╗
+═══════════════════════════════╣ Users Information ╠═══════════════════════════════
+                               ╚═══════════════════╝
+╔══════════╣ My user
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#users
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon[0m),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+
+╔══════════╣ PGP Keys and Related Files
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#pgp-keys
+GPG:
+gpg Not Found
+
+NetPGP:
+netpgpkeys Not Found
+
+PGP Related Files:
+
+╔══════════╣ Checking 'sudo -l', /etc/sudoers, and /etc/sudoers.d
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#sudo-and-suid
+
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2025-05-26 20:04:45 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+
+╔══════════╣ Checking sudo tokens
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#reusing-sudo-tokens
+ptrace protection is enabled (1)
+
+doas.conf Not Found
+
+╔══════════╣ Checking Pkexec and Polkit
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/interesting-groups-linux-pe/index.html#pe---method-2
+
+══╣ Polkit Binary
+
+══╣ Polkit Policies
+
+══╣ Polkit Authentication Agent
+
+╔══════════╣ Superusers and UID 0 Users
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/interesting-groups-linux-pe/index.html
+
+══╣ Users with UID 0 in /etc/passwd
+root:x:0:0:root:/root:/bin/sh
+
+══╣ Users with sudo privileges in sudoers
+
+╔══════════╣ Users with console
+root:x:0:0:root:/root:/bin/sh
+
+╔══════════╣ All users & groups
+uid=0(root) gid=0(root) groups=0(root),0(root),1(bin),2(daemon[0m),3(sys),4(adm),6(disk),10(wheel),11(floppy),20(dialout),26(tape),27(video)
+uid=1(bin) gid=1(bin) groups=1(bin),1(bin),2(daemon[0m),3(sys)
+uid=10(uucp) gid=14(uucp) groups=14(uucp),14(uucp)
+uid=123(ntp) gid=123(ntp) groups=123(ntp)
+uid=16(cron) gid=16(cron) groups=16(cron),16(cron)
+uid=2(daemon[0m) gid=2(daemon[0m) groups=2(daemon[0m),1(bin),2(daemon[0m),4(adm)
+uid=21(ftp) gid=21(ftp) groups=21(ftp)
+uid=22(sshd) gid=22(sshd) groups=22(sshd)
+uid=35(games) gid=35(games) groups=35(games),100(users)
+uid=4(lp) gid=7(lp) groups=7(lp),7(lp)
+uid=405(guest) gid=100(users) groups=100(users)
+uid=5(sync) gid=0(root) groups=0(root)
+uid=6(shutdown) gid=0(root) groups=0(root)
+uid=65534(nobody) gid=65534(nobody) groups=65534(nobody)
+uid=7(halt) gid=0(root) groups=0(root)
+uid=8(mail) gid=12(mail) groups=12(mail),12(mail)
+uid=9(news) gid=13(news) groups=13(news),13(news)
+
+╔══════════╣ Currently Logged in Users
+
+══╣ Basic user information
+
+══╣ Active sessions
+
+══╣ Logged in users (utmp)
+
+══╣ SSH sessions
+
+══╣ Screen sessions
+
+══╣ Tmux sessions
+
+╔══════════╣ Last Logons and Login History
+
+══╣ Last logins
+
+══╣ Failed login attempts
+
+══╣ Recent logins from auth.log (limit 20)
+
+
+╔══════════╣ Do not forget to test 'su' as any other user with shell: without password and with their names as password (I don't do it in FAST mode...)
+
+╔══════════╣ Do not forget to execute 'sudo -l' without password or with valid password (if you know it)!!
+
+
+
+                             ╔══════════════════════╗
+═════════════════════════════╣ Software Information ╠═════════════════════════════
+                             ╚══════════════════════╝
+╔══════════╣ Useful software
+/bin/base64
+/usr/bin/nc
+/bin/ping
+/usr/bin/python
+/usr/bin/python3
+/usr/bin/socat
+/usr/bin/wget
+
+╔══════════╣ Installed Compilers
+
+
+
+MySQL process not found.
+╔══════════╣ Searching uncommon passwd files (splunk)
+passwd file: /etc/passwd
+
+╔══════════╣ Searching ssl/ssh files
+╔══════════╣ Analyzing SSH Files (limit 70)
+
+
+
+
+
+-rw-r--r--    1 root     root           451 Aug 14  2024 /etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /etc/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /etc/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub
+-rw-r--r--    1 root     root           451 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub
+-rw-r--r--    1 root     root           800 Aug 14  2024 /usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/loongarch64/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub
+lrwxrwxrwx    1 root     root            54 Jul 15 10:42 /usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub -> ../alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub
+
+══╣ Some certificates were found (out limited):
+/etc/ssl/cert.pem
+/etc/ssl/certs/ca-certificates.crt
+/etc/ssl1.1/cert.pem
+9834PSTORAGE_CERTSBIN
+
+
+
+
+
+                      ╔════════════════════════════════════╗
+══════════════════════╣ Files with Interesting Permissions ╠══════════════════════
+                      ╚════════════════════════════════════╝
+╔══════════╣ SUID - Check easy privesc, exploits and write perms
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#sudo-and-suid
+strace Not Found
+ls: : No such file or directory
+ (Unknown SUID binary!)
+
+╔══════════╣ SGID
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#sudo-and-suid
+ls: : No such file or directory
+ (Unknown SGID binary)
+
+╔══════════╣ Files with ACLs (limited to 50)
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#acls
+files with acls in searched folders Not Found
+
+╔══════════╣ Capabilities
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#capabilities
+══╣ Current shell capabilities
+CapInh:	0000000000000000
+CapPrm:	00000000a80c25fb
+CapEff:	00000000a80c25fb
+CapBnd:	00000000a80c25fb
+CapAmb:	0000000000000000
+
+══╣ Parent proc capabilities
+CapInh:	0000000000000000
+CapPrm:	00000000a80c25fb
+CapEff:	00000000a80c25fb
+CapBnd:	00000000a80c25fb
+CapAmb:	0000000000000000
+
+
+Files with capabilities (limited to 50):
+
+╔══════════╣ Files (scripts) in /etc/profile.d/
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#profiles-files
+
+╔══════════╣ Permissions in init, init.d, systemd, and rc.d
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#init-initd-systemd-and-rcd
+
+═╣ Hashes inside passwd file? ........... No
+═╣ Writable passwd file? ................ /etc/passwd is writable
+═╣ Credentials in fstab/mtab? ........... No
+═╣ Can I read shadow files? ............. root:*::0:::::
+bin:!::0:::::
+daemon:!::0:::::
+lp:!::0:::::
+sync:!::0:::::
+shutdown:!::0:::::
+halt:!::0:::::
+mail:!::0:::::
+news:!::0:::::
+uucp:!::0:::::
+cron:!::0:::::
+ftp:!::0:::::
+sshd:!::0:::::
+games:!::0:::::
+ntp:!::0:::::
+guest:!::0:::::
+nobody:!::0:::::
+═╣ Can I read shadow plists? ............ No
+═╣ Can I write shadow plists? ........... No
+═╣ Can I read opasswd file? ............. No
+═╣ Can I write in network-scripts? ...... No
+═╣ Can I read root folder? .............. total 8
+drwx------    1 root     root            47 Oct  2 19:49 .
+drwxr-xr-x    1 root     root            43 Oct  2 19:36 ..
+-rw-------    1 root     root           368 Oct  2 19:48 .ash_history
+-rw-------    1 root     root           317 Oct  2 20:17 .bash_history
+drwxr-xr-x    3 root     root            17 Oct  1 19:14 .cache
+
+╔══════════╣ Searching root files in home dirs (limit 30)
+/home/
+/root/
+/root/.ash_history
+/root/.bash_history
+/root/.cache
+/root/.cache/pip
+/root/.cache/pip/http-v2
+/root/.cache/pip/http-v2/0
+/root/.cache/pip/http-v2/0/2
+/root/.cache/pip/http-v2/0/2/f
+/root/.cache/pip/http-v2/0/2/f/7
+/root/.cache/pip/http-v2/0/2/f/7/d
+/root/.cache/pip/http-v2/0/2/f/7/d/02f7dc6594973a4afaa446c6c3afa6870b8751d329d26134dfbfb06b
+/root/.cache/pip/http-v2/0/2/f/7/d/02f7dc6594973a4afaa446c6c3afa6870b8751d329d26134dfbfb06b.body
+/root/.cache/pip/http-v2/0/6
+/root/.cache/pip/http-v2/0/6/7
+/root/.cache/pip/http-v2/0/6/7/d
+/root/.cache/pip/http-v2/0/6/7/d/e
+/root/.cache/pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549
+/root/.cache/pip/http-v2/0/6/7/d/e/067de891d4624fc09de1c690b01d8bf477f69f0ce81f8101b21b3549.body
+/root/.cache/pip/http-v2/0/7
+/root/.cache/pip/http-v2/0/7/8
+/root/.cache/pip/http-v2/0/7/8/0
+/root/.cache/pip/http-v2/0/7/8/0/f
+/root/.cache/pip/http-v2/0/7/8/0/f/0780f3358dba6a80d0c5df5b67519889003a4eaffc9b7ef81462ca1b
+/root/.cache/pip/http-v2/0/7/8/0/f/0780f3358dba6a80d0c5df5b67519889003a4eaffc9b7ef81462ca1b.body
+/root/.cache/pip/http-v2/1
+/root/.cache/pip/http-v2/1/c
+/root/.cache/pip/http-v2/1/c/f
+/root/.cache/pip/http-v2/1/c/f/4
+
+
+
+                            ╔═════════════════════════╗
+════════════════════════════╣ Other Interesting Files ╠════════════════════════════
+                            ╚═════════════════════════╝
+╔══════════╣ .sh files in path
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#scriptbinaries-in-path
+
+╔══════════╣ Executable files potentially added by user (limit 70)
+
+╔══════════╣ Unexpected in root
+/server
+
+╔══════════╣ Modified interesting files in the last 5mins (limit 100)
+/root/.bash_history
+
+╔══════════╣ Syslog configuration (limit 50)
+syslog configuration Not Found
+╔══════════╣ Auditd configuration (limit 50)
+auditd configuration Not Found
+╔══════════╣ Log files with potentially weak perms (limit 50)
+
+╔══════════╣ Files inside /root (limit 20)
+total 8
+drwx------    1 root     root            47 Oct  2 19:49 .
+drwxr-xr-x    1 root     root            43 Oct  2 19:36 ..
+-rw-------    1 root     root           368 Oct  2 19:48 .ash_history
+-rw-------    1 root     root           317 Oct  2 20:17 .bash_history
+drwxr-xr-x    3 root     root            17 Oct  1 19:14 .cache
+
+╔══════════╣ Files inside others home (limit 20)
+
+╔══════════╣ Searching installed mail applications
+sendmail
+
+╔══════════╣ Mails (limit 50)
+
+╔══════════╣ Backup files (limited 100)
+
+
+╔══════════╣ Web files?(output limit)
+
+╔══════════╣ All relevant hidden files (not in /sys/ or the ones listed in the previous check) (limit 70)
+
+╔══════════╣ Readable files inside /tmp, /var/tmp, /private/tmp, /private/var/at/tmp, /private/var/tmp, and backup folders (limit 70)
+
+╔══════════╣ Searching passwords in history files
+/root/.bash_history:curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | sh
+
+╔══════════╣ Checking for TTY (sudo/su) passwords in audit logs
+
+╔══════════╣ Checking for TTY (sudo/su) passwords in audit logs
+
+╔══════════╣ Searching passwords inside logs (limit 70)
+
+╔══════════╣ Checking all env variables in /proc/*/environ removing duplicates and filtering out useless env vars
+C2_ENDPOINT=ad8957fd-ed5a-48a1-a2df-8aa08c3bc983.openec.sc:1337
+CHALLENGE_NAMESPACE=challenge-fb300cea-fa25-5ff1-9f33-095f9d9836b2
+HOME=/root
+HOSTNAME=c2
+KUBERNETES_PORT=tcp://10.0.96.1:443
+KUBERNETES_PORT_443_TCP=tcp://10.0.96.1:443
+KUBERNETES_PORT_443_TCP_ADDR=10.0.96.1
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_SERVICE_HOST=10.0.96.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_SERVICE_PORT_HTTPS=443
+PWD=/server
+SHELL_ENDPOINT=c5b61a63-1ade-4041-bca0-fe33f1752e18.openec.sc:31337
+SHLVL=1
+SHLVL=2
+SHLVL=3
+SHLVL=4
+SHLVL=5
+SOCAT_PEERADDR=10.0.134.79
+SOCAT_PEERPORT=33644
+SOCAT_PID=9813
+SOCAT_PPID=11
+SOCAT_SOCKADDR=10.0.135.144
+SOCAT_SOCKPORT=12345
+SOCAT_VERSION=1.8.0.3
+_=./linpeas.sh
+_=./main.py
+_=/bin/dd
+_=/bin/grep
+_=/usr/bin/xxd
+
+
+                                ╔════════════════╗
+════════════════════════════════╣ API Keys Regex ╠════════════════════════════════
+                                ╚════════════════╝
+Regexes to search for API keys aren't activated, use param '-r' 
+
